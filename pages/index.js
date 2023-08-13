@@ -1,7 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18nextConfig from "../i18n/next-i18next.config";
-import Typed from "react-typed";
 
 //Components
 import ProjectsBtn from "../components/ProjectsBtn";
@@ -26,17 +25,8 @@ const Home = () => {
 						exit="hidden">
 						<h6 className="text-xl">Bonjour ! Je suis</h6>
 						<h1 className="my-4  text-2xl">MOHAMED YESSINE BAANANOU</h1>
-						<Typed
-							strings={[
-								"Développeur Fullstack",
-								"Développeur Frontend",
-								"Développeur Backend",
-							]}
-							typeSpeed={40}
-							backSpeed={50}
-							className={"text-accent font-bold"}
-							loop
-						/>
+
+						<div className={"text-accent font-bold"}>Développeur Fullstack</div>
 					</motion.div>
 					<motion.div
 						variants={fadeIn("down", 0, 3)}

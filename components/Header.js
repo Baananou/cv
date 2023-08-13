@@ -4,7 +4,6 @@ import Link from "next/link";
 
 //components
 import Socials from "./Socials";
-import Typed from "react-typed";
 
 const Header = () => {
 	return (
@@ -19,17 +18,10 @@ const Header = () => {
 							alt="logo"
 							priority={true}
 						/> */}
-						<Typed
-							strings={[
-								"Mohamed",
-								"Mohamed Yessine",
-								"Mohamed Yessine Baananou",
-							]}
-							typeSpeed={10}
-							backSpeed={50}
-							className={"text-accent font-semibold text-xl"}
-							loopCount={1}
-						/>
+
+						<div className={"text-accent font-semibold text-xl"}>
+							Mohamed Yessine Baananou
+						</div>
 					</Link>
 					<Socials />
 				</div>
