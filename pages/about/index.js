@@ -153,121 +153,121 @@ export const aboutData = [
 		],
 		show: true,
 	},
-	{
-		title: "COMPÉTENCES",
-		info: [
-			{
-				title: "Frameworks",
-				icons: [
-					{ icon: <FaReact key={1} />, title: "React" },
-					{ icon: <SiNextdotjs key={2} />, title: "Next.js" },
-					{ icon: <SiAngular key={3} />, title: "Angular" },
-					{ icon: <SiTailwindcss key={4} />, title: "Tailwind CSS" },
-					{ icon: <SiBootstrap key={5} />, title: "Bootstrap" },
-					{ icon: <SiFlask key={6} />, title: "Flask" },
-					{ icon: <SiDotnet key={7} />, title: ".NET" },
-					{ icon: <SiFlutter key={8} />, title: "Flutter" },
-					{ icon: <SiI18Next key={9} />, title: "i18next" },
-				],
-			},
-			{
-				title: "Langages",
-				icons: [
-					{ icon: <FaHtml5 key={1} />, title: "HTML5" },
-					{ icon: <FaCss3 key={2} />, title: "CSS3" },
-					{ icon: <FaJs key={3} />, title: "JavaScript" },
-					{ icon: <SiDart key={4} />, title: "Dart" },
-					{ icon: <SiPython key={5} />, title: "Python" },
-					{ icon: <SiJavascript key={6} />, title: "JavaScript" },
-					{ icon: <SiTypescript key={7} />, title: "TypeScript" },
-					{ icon: <SiPhp key={8} />, title: "PHP" },
-					{ icon: <SiGo key={9} />, title: "Go" },
-					{ icon: <SiGraphql key={10} />, title: "GraphQL" },
-					{ icon: <SiCsharp key={11} />, title: "C#" },
-					{ icon: <SiC key={12} />, title: "C" },
-					{ icon: <SiMysql key={13} />, title: "MySQL" },
-					{ icon: <FaJava key={14} />, title: "Java" },
-				],
-			},
-			{
-				title: "IDE",
-				icons: [
-					{ icon: <SiEclipseide key={1} />, title: "Eclipse IDE" },
-					{ icon: <SiVisualstudio key={2} />, title: "Visual Studio" },
-					{ icon: <SiVisualstudiocode key={3} />, title: "Visual Studio Code" },
-				],
-			},
-			{
-				title: "API Testing",
-				icons: [{ icon: <SiPostman key={1} />, title: "Postman" }],
-			},
-			{
-				title: "Système d'exploitation",
-				icons: [
-					{ icon: <SiWindows key={1} />, title: "Windows" },
-					{ icon: <SiLinux key={2} />, title: "Linux" },
-				],
-			},
-			{
-				title: "Design",
-				icons: [
-					{ icon: <FaFigma key={1} />, title: "Figma" },
-					{ icon: <SiAdobexd key={2} />, title: "Adobe XD" },
-					{ icon: <SiAdobephotoshop key={3} />, title: "Adobe Photoshop" },
-					{ icon: <SiAdobeillustrator key={4} />, title: "Adobe Illustrator" },
-				],
-			},
-		],
-		show: true,
-	},
-	{
-		title: "CERTIFICATION",
-		info: [
-			{
-				title: "Introduction à SQL en SQL - DataCamp",
-				stage: "2023",
-				certif:
-					"https://www.datacamp.com/statement-of-accomplishment/course/f2fdf7e9ebd6f851f5e8cc6221bf0ab745c47b46",
-			},
-			{
-				title: "SQL intermédiaire en SQL - DataCamp",
-				stage: "2023",
-				certif:
-					"https://www.datacamp.com/statement-of-accomplishment/course/5e9324228e14ae661d6beb005da21b8edac47838",
-			},
-			{
-				title: "Jointure de données en SQL - DataCamp",
-				stage: "2023",
-				certif:
-					"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
-			},
-			{
-				title: "Classification d'images de base avec TensorFlow - Coursera",
-				stage: "2023",
-				certif:
-					"https://www.coursera.org/account/accomplishments/verify/YL46X932EZNF?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project",
-			},
-			{
-				title: "Formation de Premiers Secours - Croissant-Rouge Tunisien",
-				stage: "2022",
-				// certif:
-				// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
-			},
-			{
-				title: "DELF - AMIDEAST SOUSSE",
-				stage: "2022",
-				// certif:
-				// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
-			},
-			{
-				title: "TOEIC - AMIDEAST SOUSSE",
-				stage: "2022",
-				// certif:
-				// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
-			},
-		],
-		show: true,
-	},
+	// {
+	// 	title: "COMPÉTENCES",
+	// 	info: [
+	// 		{
+	// 			title: "Frameworks",
+	// 			icons: [
+	// 				{ icon: <FaReact key={1} />, title: "React" },
+	// 				{ icon: <SiNextdotjs key={2} />, title: "Next.js" },
+	// 				{ icon: <SiAngular key={3} />, title: "Angular" },
+	// 				{ icon: <SiTailwindcss key={4} />, title: "Tailwind CSS" },
+	// 				{ icon: <SiBootstrap key={5} />, title: "Bootstrap" },
+	// 				{ icon: <SiFlask key={6} />, title: "Flask" },
+	// 				{ icon: <SiDotnet key={7} />, title: ".NET" },
+	// 				{ icon: <SiFlutter key={8} />, title: "Flutter" },
+	// 				{ icon: <SiI18Next key={9} />, title: "i18next" },
+	// 			],
+	// 		},
+	// 		{
+	// 			title: "Langages",
+	// 			icons: [
+	// 				{ icon: <FaHtml5 key={1} />, title: "HTML5" },
+	// 				{ icon: <FaCss3 key={2} />, title: "CSS3" },
+	// 				{ icon: <FaJs key={3} />, title: "JavaScript" },
+	// 				{ icon: <SiDart key={4} />, title: "Dart" },
+	// 				{ icon: <SiPython key={5} />, title: "Python" },
+	// 				{ icon: <SiJavascript key={6} />, title: "JavaScript" },
+	// 				{ icon: <SiTypescript key={7} />, title: "TypeScript" },
+	// 				{ icon: <SiPhp key={8} />, title: "PHP" },
+	// 				{ icon: <SiGo key={9} />, title: "Go" },
+	// 				{ icon: <SiGraphql key={10} />, title: "GraphQL" },
+	// 				{ icon: <SiCsharp key={11} />, title: "C#" },
+	// 				{ icon: <SiC key={12} />, title: "C" },
+	// 				{ icon: <SiMysql key={13} />, title: "MySQL" },
+	// 				{ icon: <FaJava key={14} />, title: "Java" },
+	// 			],
+	// 		},
+	// 		{
+	// 			title: "IDE",
+	// 			icons: [
+	// 				{ icon: <SiEclipseide key={1} />, title: "Eclipse IDE" },
+	// 				{ icon: <SiVisualstudio key={2} />, title: "Visual Studio" },
+	// 				{ icon: <SiVisualstudiocode key={3} />, title: "Visual Studio Code" },
+	// 			],
+	// 		},
+	// 		{
+	// 			title: "API Testing",
+	// 			icons: [{ icon: <SiPostman key={1} />, title: "Postman" }],
+	// 		},
+	// 		{
+	// 			title: "Système d'exploitation",
+	// 			icons: [
+	// 				{ icon: <SiWindows key={1} />, title: "Windows" },
+	// 				{ icon: <SiLinux key={2} />, title: "Linux" },
+	// 			],
+	// 		},
+	// 		{
+	// 			title: "Design",
+	// 			icons: [
+	// 				{ icon: <FaFigma key={1} />, title: "Figma" },
+	// 				{ icon: <SiAdobexd key={2} />, title: "Adobe XD" },
+	// 				{ icon: <SiAdobephotoshop key={3} />, title: "Adobe Photoshop" },
+	// 				{ icon: <SiAdobeillustrator key={4} />, title: "Adobe Illustrator" },
+	// 			],
+	// 		},
+	// 	],
+	// 	show: true,
+	// },
+	// {
+	// 	title: "CERTIFICATION",
+	// 	info: [
+	// 		{
+	// 			title: "Introduction à SQL en SQL - DataCamp",
+	// 			stage: "2023",
+	// 			certif:
+	// 				"https://www.datacamp.com/statement-of-accomplishment/course/f2fdf7e9ebd6f851f5e8cc6221bf0ab745c47b46",
+	// 		},
+	// 		{
+	// 			title: "SQL intermédiaire en SQL - DataCamp",
+	// 			stage: "2023",
+	// 			certif:
+	// 				"https://www.datacamp.com/statement-of-accomplishment/course/5e9324228e14ae661d6beb005da21b8edac47838",
+	// 		},
+	// 		{
+	// 			title: "Jointure de données en SQL - DataCamp",
+	// 			stage: "2023",
+	// 			certif:
+	// 				"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
+	// 		},
+	// 		{
+	// 			title: "Classification d'images de base avec TensorFlow - Coursera",
+	// 			stage: "2023",
+	// 			certif:
+	// 				"https://www.coursera.org/account/accomplishments/verify/YL46X932EZNF?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project",
+	// 		},
+	// 		{
+	// 			title: "Formation de Premiers Secours - Croissant-Rouge Tunisien",
+	// 			stage: "2022",
+	// 			// certif:
+	// 			// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
+	// 		},
+	// 		{
+	// 			title: "DELF - AMIDEAST SOUSSE",
+	// 			stage: "2022",
+	// 			// certif:
+	// 			// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
+	// 		},
+	// 		{
+	// 			title: "TOEIC - AMIDEAST SOUSSE",
+	// 			stage: "2022",
+	// 			// certif:
+	// 			// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
+	// 		},
+	// 	],
+	// 	show: true,
+	// },
 ];
 
 //components
@@ -280,28 +280,83 @@ import { useState } from "react";
 //framer
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+
+//next
 import Link from "next/link";
 import Image from "next/image";
+
+// counter
+import CountUp from "react-countup";
+
 const About = () => {
 	const [index, setIndex] = useState(0);
 	return (
-		<div className="h-full bg-primary/10 py-32 text-center xl:text-left">
+		<div className="h-full bg-primary/30 py-32 text-center xl:text-left">
 			<Circles />
 			<motion.div
-				variants={fadeIn("right", 0, 5)}
+				variants={fadeIn("right", 0, 2)}
 				initial="hidden"
 				animate="show"
 				exit="hidden"
-				// transition={{ duration: 1, ease: "easeInOut" }}
 				className="hidden xl:flex absolute bottom-0 -left-[370px]">
 				<Avatar />
 			</motion.div>
 			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-				{/* <div className="flex-1 flex flex-col justify-center h-full">
-					<Avatar />
-				</div> */}
-				<div className="flex flex-col w-full  h-[480px] pt-10">
-					<div className="flex gap-x-4 xl:gap-x-16 mx-auto xl:mx-0 mb-4 ">
+				<div className="flex-1 flex flex-col justify-center">
+					<motion.h2
+						variants={fadeIn("right", 0, 2)}
+						initial="hidden"
+						animate="show"
+						exit="hidden"
+						className="h2">
+						Captivationg <span className="text-accent">stories</span> birth
+						magnificent designs.
+					</motion.h2>
+					<motion.p
+						variants={fadeIn("right", 0, 2)}
+						initial="hidden"
+						animate="show"
+						exit="hidden"
+						className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
+						Étudiant en 5ème année de génie informatique à l&apos;école
+						Polytechnique de Sousse, doté d&apos;une expertise polyvalente en
+						technologies modernes ( Web, Mobile et Design ). Secouriste engagé
+						et impliqué dans divers projets sociaux.
+					</motion.p>
+					<div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
+						<div className="flex flex-1 xl:gap-x-6 ">
+							{/* Experience */}
+							<div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+									<CountUp start={0} end={10} duration={5} /> +
+								</div>
+								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+									Years of Experience
+								</div>
+							</div>
+							{/* Experience */}
+							<div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+									<CountUp start={0} end={10} duration={5} /> +
+								</div>
+								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+									Years of Experience
+								</div>
+							</div>
+							{/* Experience */}
+							<div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+									<CountUp start={0} end={10} duration={5} /> +
+								</div>
+								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+									Years of Experience
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="flex flex-col w-full xl:max-w-[48%] h-[480px] pt-10">
+					<div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 ">
 						{aboutData.map((item, itemIndex) => {
 							return (
 								<div
@@ -322,57 +377,73 @@ const About = () => {
 						{aboutData[index].info.map((item, itemIndex) => {
 							return (
 								<div key={itemIndex}>
-									<div className="flex gap-2">
-										{item.logo && (
-											<Image
-												alt="logo"
-												src={item.logo}
-												height={120}
-												width={120}
-												className=" rounded-full bg-white h-16 w-16 flex justify-center items-center"
-											/>
-										)}
+									{aboutData[index].show === true ? (
+										<div>
+											<div className="flex gap-2">
+												{item.logo && (
+													<Image
+														alt="logo"
+														src={item.logo}
+														height={120}
+														width={120}
+														className=" rounded-full bg-white h-16 w-16 flex justify-center items-center"
+													/>
+												)}
 
-										<div className="flex-1 flex flex-col md:flex-row max-w-max gap-x-4 items-center text-white/60">
-											<div className="font-light mb-2 md:mb-0">
-												{item.title}
-											</div>
-											<div className="hidden md:flex">-</div>
-											<div>{item.stage}</div>
-
-											<div className="flex gap-x-4">
-												{item.icons?.map((icon, itemIndex) => (
-													<div key={itemIndex} className="relative group">
-														<div className="text-2xl text-white mb-1">
-															{icon.icon}
-														</div>
-														<div className="opacity-0 group-hover:opacity-100 bg-black text-white text-xs text-center px-2 py-1 rounded absolute bottom-full left-1/2 transform -translate-x-1/2 transition-opacity duration-300 pointer-events-none">
-															{icon.title}
-														</div>
+												<div className="flex-1 flex flex-col md:flex-row max-w-max gap-x-4 items-center text-white/60">
+													<div className="font-light mb-2 md:mb-0">
+														{item.title}
 													</div>
-												))}
+													<div className="hidden md:flex">-</div>
+													<div>{item.stage}</div>
+
+													<div className="flex gap-x-4">
+														{item.icons?.map((icon, itemIndex) => (
+															<div key={itemIndex} className="relative group">
+																<div className="text-2xl text-white mb-1">
+																	{icon.icon}
+																</div>
+																<div className="opacity-0 group-hover:opacity-100 bg-black text-white text-xs text-center px-2 py-1 rounded absolute bottom-full left-1/2 transform -translate-x-1/2 transition-opacity duration-300 pointer-events-none">
+																	{icon.title}
+																</div>
+															</div>
+														))}
+													</div>
+												</div>
 											</div>
+											{/* {item.certif && (
+												<Link
+													href={item?.certif}
+													className="text-accent font-bold">
+													Certificat
+												</Link>
+											)}
+											{item?.company && (
+												<Link
+													href={item?.link}
+													className="text-accent font-bold">
+													{item?.company}
+												</Link>
+											)}
+											{item?.school && (
+												<Link
+													href={item?.link}
+													className="text-accent font-bold">
+													{item?.school}
+												</Link>
+											)}
+											{item?.club && (
+												<Link
+													href={item?.link}
+													className="text-accent font-bold">
+													{item?.club}
+												</Link>
+											)} */}
 										</div>
-									</div>
-									{item.certif && (
-										<Link href={item?.certif} className="text-accent font-bold">
-											Certificat
-										</Link>
-									)}
-									{item?.company && (
-										<Link href={item?.link} className="text-accent font-bold">
-											{item?.company}
-										</Link>
-									)}
-									{item?.school && (
-										<Link href={item?.link} className="text-accent font-bold">
-											{item?.school}
-										</Link>
-									)}
-									{item?.club && (
-										<Link href={item?.link} className="text-accent font-bold">
-											{item?.club}
-										</Link>
+									) : (
+										<div className="text-5xl text-accent font-bold">
+											Coming Soon
+										</div>
 									)}
 								</div>
 							);
