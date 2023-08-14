@@ -81,7 +81,7 @@ export const aboutData = [
 				],
 				stage: "2023 (Juillet) – Présent",
 				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1691951177/VAERDIA_zpy9qy.png",
-				link: "",
+				link: "https://vaerdia.com/",
 			},
 			{
 				title: "Développeur Web",
@@ -126,29 +126,29 @@ export const aboutData = [
 				title: "Secouriste (FPS)",
 				club: "Croissant-Rouge Comité Local Hammem Sousse",
 				stage: "2022 – Présent",
-				logo: "",
-				link: "",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692024958/crt_oljpvy.jpg",
+				link: "https://www.facebook.com/CRTHS",
 			},
 			{
 				title: "Créateur de contenu & Community Manager",
 				club: "We Are Sousse",
 				stage: "2021 – 2022",
-				logo: "",
-				link: "",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692025045/wearesousse_pmu99y.png",
+				link: "https://www.facebook.com/WeareSousse",
 			},
 			{
 				title: "Officier des Affaires Internes et Externe du Club GDSC",
 				club: "GDSC Ecole Polytechnique De Sousse",
 				stage: "2021 – 2022",
-				logo: "",
-				link: "",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692025133/GDSC_Ecole_Polytechnique_de_Sousse_Vertical_color_dj1a2l.png",
+				link: "https://www.facebook.com/GDSCpoly",
 			},
 			{
 				title: "Président du Club",
 				club: "Tunivisions Ecole Polytechnique De Sousse",
 				stage: "2020 – 2021",
-				logo: "",
-				link: "",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692025171/tunivisions_eps_s2zufb.png",
+				link: "https://www.facebook.com/ClubTunivisionsEPS",
 			},
 		],
 		show: true,
@@ -301,7 +301,7 @@ const About = () => {
 				className="hidden xl:flex absolute bottom-0 -left-[370px]">
 				<Avatar />
 			</motion.div>
-			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6  overflow-y-auto scrollbar-none">
 				<div className="flex-1 flex flex-col justify-center">
 					<motion.h2
 						variants={fadeIn("right", 0, 2)}
@@ -355,7 +355,7 @@ const About = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col w-full xl:max-w-[48%] h-[480px] pt-10">
+				<div className="flex flex-col w-full xl:max-w-[50%] h-[650px] pt-10 ">
 					<div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 ">
 						{aboutData.map((item, itemIndex) => {
 							return (
@@ -373,30 +373,55 @@ const About = () => {
 							);
 						})}
 					</div>
-					<div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+					<div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4">
 						{aboutData[index].info.map((item, itemIndex) => {
 							return (
 								<div key={itemIndex}>
 									{aboutData[index].show === true ? (
-										<div>
-											<div className="flex gap-2">
+										<div className="py-2">
+											<div className="text-start ">
+												{item?.company && (
+													<Link
+														href={item?.link}
+														className="text-accent font-bold">
+														{item?.company}
+													</Link>
+												)}
+												{item?.school && (
+													<Link
+														href={item?.link}
+														className="text-accent font-bold">
+														{item?.school}
+													</Link>
+												)}
+												{item?.club && (
+													<Link
+														href={item?.link}
+														className="text-accent font-bold">
+														{item?.club}
+													</Link>
+												)}
+											</div>
+											<div className="flex gap-4">
 												{item.logo && (
 													<Image
 														alt="logo"
 														src={item.logo}
 														height={120}
 														width={120}
-														className=" rounded-full bg-white h-16 w-16 flex justify-center items-center"
+														className=" rounded-full bg-white h-16 w-16 flex justify-center items-center "
 													/>
 												)}
 
-												<div className="flex-1 flex flex-col md:flex-row max-w-max gap-x-4 items-center text-white/60">
-													<div className="font-light mb-2 md:mb-0">
+												<div className="flex flex-col max-w-max gap-x-4 items-start text-white/60 justify-center">
+													<div className="font-light mb-2 md:mb-0 flex flex-col text-start">
 														{item.title}
+														{item.stage && (
+															<div className="text-accent font-bold">
+																{item?.stage}
+															</div>
+														)}
 													</div>
-													<div className="hidden md:flex">-</div>
-													<div>{item.stage}</div>
-
 													<div className="flex gap-x-4">
 														{item.icons?.map((icon, itemIndex) => (
 															<div key={itemIndex} className="relative group">
@@ -411,34 +436,13 @@ const About = () => {
 													</div>
 												</div>
 											</div>
-											{/* {item.certif && (
+											{item.certif && (
 												<Link
 													href={item?.certif}
 													className="text-accent font-bold">
 													Certificat
 												</Link>
 											)}
-											{item?.company && (
-												<Link
-													href={item?.link}
-													className="text-accent font-bold">
-													{item?.company}
-												</Link>
-											)}
-											{item?.school && (
-												<Link
-													href={item?.link}
-													className="text-accent font-bold">
-													{item?.school}
-												</Link>
-											)}
-											{item?.club && (
-												<Link
-													href={item?.link}
-													className="text-accent font-bold">
-													{item?.club}
-												</Link>
-											)} */}
 										</div>
 									) : (
 										<div className="text-5xl text-accent font-bold">

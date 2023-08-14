@@ -19,7 +19,7 @@ const Header = () => {
 							priority={true}
 						/> */}
 
-						<div className={"text-accent font-semibold text-xl"}>
+						<div className={"text-accent font-semibold text-xl text-center"}>
 							Mohamed Yessine Baananou
 						</div>
 					</Link>
