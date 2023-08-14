@@ -303,53 +303,53 @@ const About = () => {
 			</motion.div>
 			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6  overflow-y-auto scrollbar-none">
 				<div className="flex-1 flex flex-col justify-center">
-					<motion.h2
+					<motion.div
 						variants={fadeIn("right", 0, 2)}
 						initial="hidden"
 						animate="show"
 						exit="hidden"
-						className="h2">
-						Captivationg <span className="text-accent">stories</span> birth
-						magnificent designs.
-					</motion.h2>
+						className="text-5xl mb-4">
+						Transformer{" "}
+						<span className="text-accent font-bold"> les rêves</span> en réalité
+						numérique.
+					</motion.div>
 					<motion.p
 						variants={fadeIn("right", 0, 2)}
 						initial="hidden"
 						animate="show"
 						exit="hidden"
 						className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-						Étudiant en 5ème année de génie informatique à l&apos;école
-						Polytechnique de Sousse, doté d&apos;une expertise polyvalente en
-						technologies modernes ( Web, Mobile et Design ). Secouriste engagé
-						et impliqué dans divers projets sociaux.
+						Explorateur digital dévoué, je m&apos;immerge dans le monde du
+						développement avec une passion inextinguible, cherchant constamment
+						à transformer des idées en réalité.
 					</motion.p>
 					<div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
 						<div className="flex flex-1 xl:gap-x-6 ">
 							{/* Experience */}
 							<div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
 								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-									<CountUp start={0} end={10} duration={5} /> +
+									<CountUp start={0} end={2} duration={5} /> +
 								</div>
 								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-									Years of Experience
+									années d&apos;expérience professionnelle
 								</div>
 							</div>
 							{/* Experience */}
 							<div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
 								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-									<CountUp start={0} end={10} duration={5} /> +
+									<CountUp start={0} end={5} duration={5} /> +
 								</div>
 								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-									Years of Experience
+									années d&apos;expérience associative
 								</div>
 							</div>
 							{/* Experience */}
 							<div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
 								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-									<CountUp start={0} end={10} duration={5} /> +
+									<CountUp start={0} end={30} duration={5} /> +
 								</div>
 								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-									Years of Experience
+									projets de travail et d&apos;étude réalisés
 								</div>
 							</div>
 						</div>
@@ -415,7 +415,24 @@ const About = () => {
 
 												<div className="flex flex-col max-w-max gap-x-4 items-start text-white/60 justify-center">
 													<div className="font-light mb-2 md:mb-0 flex flex-col text-start">
-														{item.title}
+														<div
+															className={`text-white font-bold ${
+																item.tasks ? "my-4" : ""
+															}`}>
+															{item.title}
+														</div>
+
+														{item.tasks && (
+															<ul style={{ listStyleType: "disc" }}>
+																{item.tasks.map((task, Index) => {
+																	return (
+																		<li key={Index} className="py-2">
+																			{task}
+																		</li>
+																	);
+																})}
+															</ul>
+														)}
 														{item.stage && (
 															<div className="text-accent font-bold">
 																{item?.stage}

@@ -1,7 +1,3 @@
-import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import nextI18nextConfig from "../i18n/next-i18next.config";
-
 //Components
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
@@ -35,13 +31,14 @@ const Home = () => {
 						exit="hidden"
 						className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
 						<p className="text-xl text-justify my-4">
-							Étudiant en 5ème année de génie informatique à l&apos;école
-							Polytechnique de Sousse, doté d&apos;une expertise polyvalente en
-							technologies modernes ( Web, Mobile et Design ). Secouriste engagé
-							et impliqué dans divers projets sociaux.
+							Je suis Mohamed Yessine Baananou, étudiant en génie informatique à
+							l&apos;École Polytechnique de Sousse. Passionné par le
+							développement web et mobile, je suis aussi secouriste et engagé
+							dans des projets associatifs. Mon expérience en développement et
+							en leadership en fait un atout polyvalent.
 						</p>
 					</motion.div>
-					<motion.div
+					{/* <motion.div
 						variants={fadeIn("down", 0, 4)}
 						initial="hidden"
 						animate="show"
@@ -69,21 +66,19 @@ const Home = () => {
 								Contact
 							</button>
 						</Link>
-					</motion.div>
+					</motion.div> */}
 				</div>
 			</div>
 
 			<div className="w-[1200px] h-full absolute right-0 bottom-0">
-				<div className="bg-none  xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
-				{/* xl:bg-explosion */}
 				<motion.div
 					variants={fadeIn("up", 0, 5)}
 					initial="hidden"
 					animate="show"
 					exit="hidden"
 					transition={{ duration: 1, ease: "easeInOut" }}
-					className="w-full h-full max-w-[700px] max-h-[700px] absolute 
-			lg:bottom-0 lg:right-[8%]">
+					className="w-full h-full max-w-[50%] max-h-[70%] absolute 
+			lg:bottom-0 lg:right-0">
 					<Avatar />
 				</motion.div>
 			</div>
@@ -92,15 +87,3 @@ const Home = () => {
 };
 
 export default Home;
-
-export const getServerSideProps = async (context) => {
-	return {
-		props: {
-			...(await serverSideTranslations(
-				context.locale,
-				["common", "home"],
-				nextI18nextConfig
-			)),
-		},
-	};
-};

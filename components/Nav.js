@@ -10,10 +10,10 @@ import {
 
 // nav data
 export const navData = [
-	{ name: "home", path: "/", icon: <HiHome /> },
-	{ name: "about", path: "/about", icon: <HiUser /> },
-	{ name: "services", path: "/services", icon: <HiRectangleGroup /> },
-	{ name: "work", path: "/work", icon: <HiViewColumns /> },
+	{ name: "acceuil", path: "/", icon: <HiHome /> },
+	{ name: "à propos", path: "/about", icon: <HiUser /> },
+	{ name: "compétances", path: "/services", icon: <HiRectangleGroup /> },
+	{ name: "projets", path: "/work", icon: <HiViewColumns /> },
 	{
 		name: "testimonials",
 		path: "/testimonials",
@@ -24,6 +24,11 @@ export const navData = [
 		path: "/contact",
 		icon: <HiEnvelope />,
 	},
+	{
+		name: "Télécharger CV",
+		path: "/contact",
+		icon: <FaDownload />,
+	},
 ];
 
 //next
@@ -31,6 +36,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import LangDrop from "./Lang-Drop";
+import { FaDownload } from "react-icons/fa";
 
 const Nav = () => {
 	const { i18n } = useTranslation();
@@ -49,7 +55,7 @@ const Nav = () => {
 							href={link.path}>
 							<div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
 								<div className="bg-white relative flex text-primary items-center p-[6px] rounded">
-									<div className="text-[12px] leading-none font-semibold capitalize">
+									<div className="text-[12px] leading-none font-semibold capitalize text-center">
 										{link.name}
 									</div>
 									<div className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2"></div>
@@ -59,7 +65,7 @@ const Nav = () => {
 						</Link>
 					);
 				})}
-				<LangDrop />
+				{/* <LangDrop /> */}
 			</div>
 		</nav>
 	);
