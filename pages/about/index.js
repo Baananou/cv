@@ -6,6 +6,8 @@ import {
 	FaWordpress,
 	FaFigma,
 	FaJava,
+	FaSchool,
+	FaHandsHelping,
 } from "react-icons/fa";
 import {
 	SiNextdotjs,
@@ -37,10 +39,14 @@ import {
 	SiI18Next,
 	SiPostman,
 } from "react-icons/si";
+import { GiSkills } from "react-icons/gi";
+import { PiCertificateFill, PiListChecksBold } from "react-icons/pi";
+import { MdSchool, MdWork } from "react-icons/md";
 //  data
 export const aboutData = [
 	{
 		title: "ÉDUCATION",
+		titleIcon: <MdSchool size={30} />,
 		info: [
 			{
 				title: "Cycle Ingénierie Informatique (Accrédité Européen)",
@@ -70,6 +76,8 @@ export const aboutData = [
 	},
 	{
 		title: "EXPÉRIENCE",
+		titleIcon: <MdWork size={30} />,
+
 		info: [
 			{
 				title: "Développeur Web",
@@ -121,6 +129,8 @@ export const aboutData = [
 	},
 	{
 		title: "BÉNÉVOLAT",
+		titleIcon: <FaHandsHelping size={30} />,
+
 		info: [
 			{
 				title: "Secouriste (FPS)",
@@ -153,125 +163,129 @@ export const aboutData = [
 		],
 		show: true,
 	},
-	// {
-	// 	title: "COMPÉTENCES",
-	// 	info: [
-	// 		{
-	// 			title: "Frameworks",
-	// 			icons: [
-	// 				{ icon: <FaReact key={1} />, title: "React" },
-	// 				{ icon: <SiNextdotjs key={2} />, title: "Next.js" },
-	// 				{ icon: <SiAngular key={3} />, title: "Angular" },
-	// 				{ icon: <SiTailwindcss key={4} />, title: "Tailwind CSS" },
-	// 				{ icon: <SiBootstrap key={5} />, title: "Bootstrap" },
-	// 				{ icon: <SiFlask key={6} />, title: "Flask" },
-	// 				{ icon: <SiDotnet key={7} />, title: ".NET" },
-	// 				{ icon: <SiFlutter key={8} />, title: "Flutter" },
-	// 				{ icon: <SiI18Next key={9} />, title: "i18next" },
-	// 			],
-	// 		},
-	// 		{
-	// 			title: "Langages",
-	// 			icons: [
-	// 				{ icon: <FaHtml5 key={1} />, title: "HTML5" },
-	// 				{ icon: <FaCss3 key={2} />, title: "CSS3" },
-	// 				{ icon: <FaJs key={3} />, title: "JavaScript" },
-	// 				{ icon: <SiDart key={4} />, title: "Dart" },
-	// 				{ icon: <SiPython key={5} />, title: "Python" },
-	// 				{ icon: <SiJavascript key={6} />, title: "JavaScript" },
-	// 				{ icon: <SiTypescript key={7} />, title: "TypeScript" },
-	// 				{ icon: <SiPhp key={8} />, title: "PHP" },
-	// 				{ icon: <SiGo key={9} />, title: "Go" },
-	// 				{ icon: <SiGraphql key={10} />, title: "GraphQL" },
-	// 				{ icon: <SiCsharp key={11} />, title: "C#" },
-	// 				{ icon: <SiC key={12} />, title: "C" },
-	// 				{ icon: <SiMysql key={13} />, title: "MySQL" },
-	// 				{ icon: <FaJava key={14} />, title: "Java" },
-	// 			],
-	// 		},
-	// 		{
-	// 			title: "IDE",
-	// 			icons: [
-	// 				{ icon: <SiEclipseide key={1} />, title: "Eclipse IDE" },
-	// 				{ icon: <SiVisualstudio key={2} />, title: "Visual Studio" },
-	// 				{ icon: <SiVisualstudiocode key={3} />, title: "Visual Studio Code" },
-	// 			],
-	// 		},
-	// 		{
-	// 			title: "API Testing",
-	// 			icons: [{ icon: <SiPostman key={1} />, title: "Postman" }],
-	// 		},
-	// 		{
-	// 			title: "Système d'exploitation",
-	// 			icons: [
-	// 				{ icon: <SiWindows key={1} />, title: "Windows" },
-	// 				{ icon: <SiLinux key={2} />, title: "Linux" },
-	// 			],
-	// 		},
-	// 		{
-	// 			title: "Design",
-	// 			icons: [
-	// 				{ icon: <FaFigma key={1} />, title: "Figma" },
-	// 				{ icon: <SiAdobexd key={2} />, title: "Adobe XD" },
-	// 				{ icon: <SiAdobephotoshop key={3} />, title: "Adobe Photoshop" },
-	// 				{ icon: <SiAdobeillustrator key={4} />, title: "Adobe Illustrator" },
-	// 			],
-	// 		},
-	// 	],
-	// 	show: true,
-	// },
-	// {
-	// 	title: "CERTIFICATION",
-	// 	info: [
-	// 		{
-	// 			title: "Introduction à SQL en SQL - DataCamp",
-	// 			stage: "2023",
-	// 			certif:
-	// 				"https://www.datacamp.com/statement-of-accomplishment/course/f2fdf7e9ebd6f851f5e8cc6221bf0ab745c47b46",
-	// 		},
-	// 		{
-	// 			title: "SQL intermédiaire en SQL - DataCamp",
-	// 			stage: "2023",
-	// 			certif:
-	// 				"https://www.datacamp.com/statement-of-accomplishment/course/5e9324228e14ae661d6beb005da21b8edac47838",
-	// 		},
-	// 		{
-	// 			title: "Jointure de données en SQL - DataCamp",
-	// 			stage: "2023",
-	// 			certif:
-	// 				"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
-	// 		},
-	// 		{
-	// 			title: "Classification d'images de base avec TensorFlow - Coursera",
-	// 			stage: "2023",
-	// 			certif:
-	// 				"https://www.coursera.org/account/accomplishments/verify/YL46X932EZNF?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project",
-	// 		},
-	// 		{
-	// 			title: "Formation de Premiers Secours - Croissant-Rouge Tunisien",
-	// 			stage: "2022",
-	// 			// certif:
-	// 			// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
-	// 		},
-	// 		{
-	// 			title: "DELF - AMIDEAST SOUSSE",
-	// 			stage: "2022",
-	// 			// certif:
-	// 			// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
-	// 		},
-	// 		{
-	// 			title: "TOEIC - AMIDEAST SOUSSE",
-	// 			stage: "2022",
-	// 			// certif:
-	// 			// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
-	// 		},
-	// 	],
-	// 	show: true,
-	// },
+	{
+		title: "COMPÉTENCES",
+		titleIcon: <PiListChecksBold size={30} />,
+
+		info: [
+			{
+				title: "Langages",
+				icons: [
+					{ icon: <FaHtml5 key={1} />, title: "HTML5" },
+					{ icon: <FaCss3 key={2} />, title: "CSS3" },
+					{ icon: <SiJavascript key={6} />, title: "JavaScript" },
+					{ icon: <SiTypescript key={7} />, title: "TypeScript" },
+					// { icon: <SiPhp key={8} />, title: "PHP" },
+					// { icon: <SiGo key={9} />, title: "Go" },
+					{ icon: <SiGraphql key={10} />, title: "GraphQL" },
+					// { icon: <SiCsharp key={11} />, title: "C#" },
+					// { icon: <SiC key={12} />, title: "C" },
+					{ icon: <SiMysql key={13} />, title: "MySQL" },
+					{ icon: <SiPython key={5} />, title: "Python" },
+
+					{ icon: <FaJava key={14} />, title: "Java" },
+					{ icon: <SiDart key={4} />, title: "Dart" },
+				],
+			},
+			{
+				title: "Frameworks",
+				icons: [
+					{ icon: <FaReact key={1} />, title: "React" },
+					{ icon: <SiNextdotjs key={2} />, title: "Next.js" },
+					{ icon: <SiTailwindcss key={4} />, title: "Tailwind CSS" },
+
+					{ icon: <SiI18Next key={9} />, title: "i18next" },
+					// { icon: <SiAngular key={3} />, title: "Angular" },
+					// { icon: <SiBootstrap key={5} />, title: "Bootstrap" },
+					{ icon: <SiFlask key={6} />, title: "Flask" },
+					// { icon: <SiDotnet key={7} />, title: ".NET" },
+					{ icon: <SiFlutter key={8} />, title: "Flutter" },
+				],
+			},
+			{
+				title: "IDE",
+				icons: [
+					{ icon: <SiEclipseide key={1} />, title: "Eclipse IDE" },
+					{ icon: <SiVisualstudio key={2} />, title: "Visual Studio" },
+					{ icon: <SiVisualstudiocode key={3} />, title: "Visual Studio Code" },
+				],
+			},
+			{
+				title: "Système d'exploitation",
+				icons: [
+					{ icon: <SiWindows key={1} />, title: "Windows" },
+					{ icon: <SiLinux key={2} />, title: "Linux" },
+				],
+			},
+			{
+				title: "API Testing",
+				icons: [{ icon: <SiPostman key={1} />, title: "Postman" }],
+			},
+			{
+				title: "Design",
+				icons: [
+					{ icon: <FaFigma key={1} />, title: "Figma" },
+					{ icon: <SiAdobexd key={2} />, title: "Adobe XD" },
+					{ icon: <SiAdobephotoshop key={3} />, title: "Adobe Photoshop" },
+					{ icon: <SiAdobeillustrator key={4} />, title: "Adobe Illustrator" },
+				],
+			},
+		],
+		show: true,
+	},
+	{
+		title: "CERTIFICATION",
+		titleIcon: <PiCertificateFill size={30} />,
+
+		info: [
+			{
+				title: "Introduction à SQL en SQL - DataCamp",
+				stage: "2023",
+				certif:
+					"https://www.datacamp.com/statement-of-accomplishment/course/f2fdf7e9ebd6f851f5e8cc6221bf0ab745c47b46",
+			},
+			{
+				title: "SQL intermédiaire en SQL - DataCamp",
+				stage: "2023",
+				certif:
+					"https://www.datacamp.com/statement-of-accomplishment/course/5e9324228e14ae661d6beb005da21b8edac47838",
+			},
+			{
+				title: "Jointure de données en SQL - DataCamp",
+				stage: "2023",
+				certif:
+					"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
+			},
+			{
+				title: "Classification d'images de base avec TensorFlow - Coursera",
+				stage: "2023",
+				certif:
+					"https://www.coursera.org/account/accomplishments/verify/YL46X932EZNF?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project",
+			},
+			{
+				title: "Formation de Premiers Secours - Croissant-Rouge Tunisien",
+				stage: "2022",
+				// certif:
+				// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
+			},
+			{
+				title: "DELF - AMIDEAST SOUSSE",
+				stage: "2022",
+				// certif:
+				// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
+			},
+			{
+				title: "TOEIC - AMIDEAST SOUSSE",
+				stage: "2022",
+				// certif:
+				// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
+			},
+		],
+		show: true,
+	},
 ];
 
 //components
-import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 
 //react
@@ -364,11 +378,14 @@ const About = () => {
 									className={`${
 										index === itemIndex &&
 										"text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-									} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+									} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 group`}
 									onClick={() => {
 										setIndex(itemIndex);
 									}}>
-									{item.title}
+									{item.titleIcon}
+									<div className="opacity-0 group-hover:opacity-100 bg-black text-white text-xs text-center px-2 py-1 rounded absolute bottom-full left-1/2 transform -translate-x-1/2 transition-opacity duration-300 pointer-events-none">
+										{item.title}
+									</div>
 								</div>
 							);
 						})}
@@ -434,11 +451,20 @@ const About = () => {
 																})}
 															</ul>
 														)}
-														{item.stage && (
-															<div className="text-accent font-bold">
-																{item?.stage}
-															</div>
-														)}
+														<div className="flex gap-4">
+															{item.stage && (
+																<div className="text-accent font-bold">
+																	{item?.stage}
+																</div>
+															)}
+															{item.certif && (
+																<Link
+																	href={item?.certif}
+																	className="text-accent font-bold">
+																	Certificat
+																</Link>
+															)}
+														</div>
 													</div>
 													<div className="flex gap-x-4">
 														{item.icons?.map((icon, itemIndex) => (
@@ -454,13 +480,6 @@ const About = () => {
 													</div>
 												</div>
 											</div>
-											{item.certif && (
-												<Link
-													href={item?.certif}
-													className="text-accent font-bold">
-													Certificat
-												</Link>
-											)}
 										</div>
 									) : (
 										<div className="text-5xl text-accent font-bold">
