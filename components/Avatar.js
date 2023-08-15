@@ -1,19 +1,18 @@
 //next
 import Image from "next/image";
-const Avatar = () => {
+const Avatar = ({ width, height }) => {
 	return (
-		<div className="hidden xl:flex xl:max-w-none">
+		<div className="flex">
 			<Image
 				src={"/me4.png"}
 				alt="ME"
-				width={350}
-				height={350}
-				className={
-					"border-2 rounded-full w-[350px] h-[350px] bg-black object-cover "
-				}
+				width={width}
+				height={height}
+				className={`border-2 rounded-full w-[${width}px] h-[${height}px] bg-black object-cover`}
 			/>
 		</div>
 	);
 };
 
 export default Avatar;
+// 

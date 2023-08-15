@@ -10,19 +10,29 @@ import Link from "next/link";
 
 const Home = () => {
 	return (
-		<div className="bg-primary/60 h-full">
+		<div className="bg-primary/60 h-full ">
 			<ParticlesContainer />
-			<div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+			<div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 ">
 				<div className="text-center flex flex-col justify-center xl:text-left h-full container mx-auto">
 					<motion.div
 						variants={fadeIn("down", 0, 2)}
 						initial="hidden"
 						animate="show"
 						exit="hidden">
-						<h6 className="text-xl">Bonjour ! Je suis</h6>
-						<h1 className="my-4  text-2xl">MOHAMED YESSINE BAANANOU</h1>
+						<div className="flex flex-col items-center justify-center xl:justify-start xl:items-start overflow-y-auto">
+							<h6 className="text-xl mt-20">Bonjour ! Je suis</h6>
 
-						<div className={"text-accent font-bold"}>Développeur Fullstack</div>
+							<div className="my-4 block xl:hidden">
+								<Avatar width={150} height={150} />
+							</div>
+
+							<div className="text-center xl:text-start mx-8 xl:mx-0">
+								<h1 className="my-4 text-2xl">MOHAMED YESSINE BAANANOU</h1>
+								<div className="text-accent font-bold">
+									Développeur Fullstack
+								</div>
+							</div>
+						</div>
 					</motion.div>
 					<motion.div
 						variants={fadeIn("down", 0, 3)}
@@ -30,12 +40,14 @@ const Home = () => {
 						animate="show"
 						exit="hidden"
 						className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-						<p className="text-xl text-justify my-4">
+						<p className="text-xl text-center xl:text-justify my-4">
 							Je suis Mohamed Yessine Baananou, étudiant en génie informatique à
-							l&apos;École Polytechnique de Sousse. Passionné par le
-							développement web et mobile, je suis aussi secouriste et engagé
-							dans des projets associatifs. Mon expérience en développement et
-							en leadership en fait un atout polyvalent.
+							l&apos;École Polytechnique de Sousse.
+						</p>
+						<p className="text-xl text-justify my-4 xl:block hidden">
+							Passionné par le développement web et mobile, je suis aussi
+							secouriste et engagé dans des projets associatifs. Mon expérience
+							en développement et en leadership en fait un atout polyvalent.
 						</p>
 					</motion.div>
 					{/* <motion.div
@@ -70,16 +82,15 @@ const Home = () => {
 				</div>
 			</div>
 
-			<div className="w-[1200px] h-full absolute right-0 bottom-0">
+			<div className="hidden xl:block w-[1200px] h-full absolute right-0 bottom-0">
 				<motion.div
 					variants={fadeIn("up", 0, 5)}
 					initial="hidden"
 					animate="show"
 					exit="hidden"
 					transition={{ duration: 1, ease: "easeInOut" }}
-					className="w-full h-full max-w-[50%] max-h-[70%] absolute 
-			lg:bottom-0 lg:right-0">
-					<Avatar />
+					className="w-full h-full max-w-[50%] max-h-[70%] absolute lg:bottom-0 lg:right-0">
+					<Avatar width={350} height={350} />
 				</motion.div>
 			</div>
 		</div>
