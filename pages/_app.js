@@ -10,12 +10,22 @@ import { useRouter } from "next/router";
 
 // framer motion
 import { AnimatePresence, motion } from "framer-motion";
+import Head from "next/head";
+import { DefaultSeo } from "next-seo";
+
+//seo
+import SEO from "../seo/next-seo.config";
 
 function MyApp({ Component, pageProps }) {
 	const router = useRouter();
 	return (
 		<Layout>
+			<Head>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<meta charSet="UTF-8" />
+			</Head>
 			<AnimatePresence mode="wait">
+				<DefaultSeo {...SEO} />
 				<motion.div key={router.route} className="h-full">
 					<Transition />
 					<Component {...pageProps} />
