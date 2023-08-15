@@ -6,6 +6,7 @@ import {
 	HiRectangleGroup,
 	HiChatBubbleBottomCenterText,
 	HiEnvelope,
+	HiWallet,
 } from "react-icons/hi2";
 
 // nav data
@@ -13,7 +14,7 @@ export const navData = [
 	{ name: "acceuil", path: "/", icon: <HiHome /> },
 	{ name: "à propos", path: "/about", icon: <HiUser /> },
 	{ name: "compétances", path: "/services", icon: <HiRectangleGroup /> },
-	{ name: "projets", path: "/work", icon: <HiViewColumns /> },
+	{ name: "projets", path: "/work", icon: <HiWallet /> },
 	{
 		name: "testimonials",
 		path: "/testimonials",
@@ -24,11 +25,6 @@ export const navData = [
 		path: "/contact",
 		icon: <HiEnvelope />,
 	},
-	{
-		name: "Télécharger CV",
-		path: "/contact",
-		icon: <FaDownload />,
-	},
 ];
 
 //next
@@ -37,6 +33,7 @@ import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import LangDrop from "./Lang-Drop";
 import { FaDownload } from "react-icons/fa";
+import DownlaodCv from "./DownlaodCv";
 
 const Nav = () => {
 	const { i18n } = useTranslation();
@@ -65,7 +62,7 @@ const Nav = () => {
 						</Link>
 					);
 				})}
-				{/* <LangDrop /> */}
+				<DownlaodCv />
 			</div>
 		</nav>
 	);
