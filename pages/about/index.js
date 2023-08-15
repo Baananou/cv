@@ -38,6 +38,8 @@ import {
 	SiAdobeillustrator,
 	SiI18Next,
 	SiPostman,
+	SiAndroidstudio,
+	SiLaravel,
 } from "react-icons/si";
 import { GiSkills } from "react-icons/gi";
 import { PiCertificateFill, PiListChecksBold } from "react-icons/pi";
@@ -140,14 +142,28 @@ export const aboutData = [
 				link: "https://www.facebook.com/CRTHS",
 			},
 			{
-				title: "Créateur de contenu & Community Manager",
+				title: "Secouriste, Vice Président du Club",
+				club: "Croissant-Rouge Club Universitaire Ecole Polytechnique De Sousse ",
+				stage: "2022 – 2023",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692024958/crt_oljpvy.jpg",
+				link: "https://www.facebook.com/crtpolyestim",
+			},
+			{
+				title: "Organisateur, graphiste et photographe",
+				club: "Devfest, Sousse",
+				stage: "2021 – 2022",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692068321/devfest2021_tcpsu1.jpg",
+				link: "https://www.linkedin.com/company/gdg-sousse",
+			},
+			{
+				title: "Créateur de contenu et gestionnaire de communauté",
 				club: "We Are Sousse",
 				stage: "2021 – 2022",
 				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692025045/wearesousse_pmu99y.png",
 				link: "https://www.facebook.com/WeareSousse",
 			},
 			{
-				title: "Officier des Affaires Internes et Externe du Club GDSC",
+				title: "Officier des Affaires Internes et Externe",
 				club: "GDSC Ecole Polytechnique De Sousse",
 				stage: "2021 – 2022",
 				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692025133/GDSC_Ecole_Polytechnique_de_Sousse_Vertical_color_dj1a2l.png",
@@ -157,6 +173,13 @@ export const aboutData = [
 				title: "Président du Club",
 				club: "Tunivisions Ecole Polytechnique De Sousse",
 				stage: "2020 – 2021",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692025171/tunivisions_eps_s2zufb.png",
+				link: "https://www.facebook.com/ClubTunivisionsEPS",
+			},
+			{
+				title: "Membre actif au Club",
+				club: "Tunivisions Ecole Polytechnique De Sousse",
+				stage: "2019 – 2020",
 				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692025171/tunivisions_eps_s2zufb.png",
 				link: "https://www.facebook.com/ClubTunivisionsEPS",
 			},
@@ -175,7 +198,6 @@ export const aboutData = [
 					{ icon: <FaCss3 key={2} />, title: "CSS3" },
 					{ icon: <SiJavascript key={6} />, title: "JavaScript" },
 					{ icon: <SiTypescript key={7} />, title: "TypeScript" },
-					// { icon: <SiPhp key={8} />, title: "PHP" },
 					// { icon: <SiGo key={9} />, title: "Go" },
 					{ icon: <SiGraphql key={10} />, title: "GraphQL" },
 					// { icon: <SiCsharp key={11} />, title: "C#" },
@@ -185,6 +207,7 @@ export const aboutData = [
 
 					{ icon: <FaJava key={14} />, title: "Java" },
 					{ icon: <SiDart key={4} />, title: "Dart" },
+					{ icon: <SiPhp key={8} />, title: "PHP" },
 				],
 			},
 			{
@@ -200,6 +223,7 @@ export const aboutData = [
 					{ icon: <SiFlask key={6} />, title: "Flask" },
 					// { icon: <SiDotnet key={7} />, title: ".NET" },
 					{ icon: <SiFlutter key={8} />, title: "Flutter" },
+					{ icon: <SiLaravel key={8} />, title: "Laravel" },
 				],
 			},
 			{
@@ -208,6 +232,7 @@ export const aboutData = [
 					{ icon: <SiEclipseide key={1} />, title: "Eclipse IDE" },
 					{ icon: <SiVisualstudio key={2} />, title: "Visual Studio" },
 					{ icon: <SiVisualstudiocode key={3} />, title: "Visual Studio Code" },
+					{ icon: <SiAndroidstudio key={3} />, title: "Android Studio" },
 				],
 			},
 			{
@@ -218,7 +243,7 @@ export const aboutData = [
 				],
 			},
 			{
-				title: "API Testing",
+				title: "Test API",
 				icons: [{ icon: <SiPostman key={1} />, title: "Postman" }],
 			},
 			{
