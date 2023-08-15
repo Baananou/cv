@@ -405,6 +405,7 @@ const About = () => {
 											<div className="flex gap-4">
 												{item.logo && (
 													<Image
+														priority
 														alt="logo"
 														src={item.logo}
 														height={120}

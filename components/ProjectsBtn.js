@@ -15,6 +15,7 @@ const ProjectsBtn = () => {
 				href={"/work"}
 				className="relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-no-repeat group">
 				<Image
+					priority
 					src={
 						i18n.language === "en" ? "/rounded-text.png" : "/rounded-text.png"
 					}

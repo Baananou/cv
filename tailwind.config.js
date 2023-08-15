@@ -30,10 +30,11 @@ module.exports = {
 				hover: "#c98598",
 			},
 			backgroundImage: {
-				explosion: 'url("/bg-explosion.png")',
-				circles: 'url("/bg-circles.png")',
-				circleStar: 'url("/circle-star.svg")',
-				site: 'url("/site-bg.svg")',
+				explosion:
+					'url("https://res.cloudinary.com/duaagiskm/image/upload/v1692062236/bg-explosion_t6fdmv.png")',
+				circleStar:
+					'url("https://res.cloudinary.com/duaagiskm/image/upload/v1692061988/circle-star_whyvuy.svg")',
+				site: 'url("https://res.cloudinary.com/duaagiskm/image/upload/v1692061954/site-bg_rhkfvq.svg")',
 			},
 			animation: {
 				"spin-slow": "spin 6s linear infinite",

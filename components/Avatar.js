@@ -4,6 +4,7 @@ const Avatar = ({ width, height }) => {
 	return (
 		<div className="max-w-none">
 			{/* <Image
+priority
 				src={"/bgme.png"}
 				width={737}
 				height={678}
@@ -11,7 +12,10 @@ const Avatar = ({ width, height }) => {
 				className="translate-z-0 w-full h-full"
 			/> */}
 			<Image
-				src={"/me4.png"}
+				priority
+				src={
+					"https://res.cloudinary.com/duaagiskm/image/upload/v1692061934/me4_apbzty.png"
+				}
 				alt=""
 				width={width}
 				height={height}
