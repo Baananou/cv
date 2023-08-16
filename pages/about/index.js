@@ -294,13 +294,13 @@ export const aboutData = [
 				// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
 			},
 			{
-				title: "DELF - AMIDEAST SOUSSE",
+				title: "DELF - Score : 76/100 - AMIDEAST SOUSSE",
 				stage: "2022",
 				// certif:
 				// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
 			},
 			{
-				title: "TOEIC - AMIDEAST SOUSSE",
+				title: "TOEIC - Score : 815/1000 - AMIDEAST SOUSSE",
 				stage: "2022",
 				// certif:
 				// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
