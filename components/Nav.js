@@ -13,13 +13,13 @@ import {
 export const navData = [
 	{ name: "acceuil", path: "/", icon: <HiHome /> },
 	{ name: "à propos", path: "/about", icon: <HiUser /> },
-	{ name: "compétances", path: "/services", icon: <HiRectangleGroup /> },
+	// { name: "compétances", path: "/services", icon: <HiRectangleGroup /> },
 	{ name: "projets", path: "/work", icon: <HiWallet /> },
-	{
-		name: "testimonials",
-		path: "/testimonials",
-		icon: <HiChatBubbleBottomCenterText />,
-	},
+	// {
+	// 	name: "testimonials",
+	// 	path: "/testimonials",
+	// 	icon: <HiChatBubbleBottomCenterText />,
+	// },
 	{
 		name: "contact",
 		path: "/contact",

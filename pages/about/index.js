@@ -423,24 +423,33 @@ const About = () => {
 										<div className="py-2">
 											<div className="text-start ">
 												{item?.company && (
-													<Link
-														href={item?.link}
-														className="text-accent font-bold">
-														{item?.company}
+													<Link passHref legacyBehavior href={item?.link}>
+														<a
+															target="_blank"
+															rel="noopener noreferrer"
+															className="text-accent font-bold">
+															{item?.company}
+														</a>
 													</Link>
 												)}
 												{item?.school && (
-													<Link
-														href={item?.link}
-														className="text-accent font-bold">
-														{item?.school}
+													<Link passHref legacyBehavior href={item?.link}>
+														<a
+															target="_blank"
+															rel="noopener noreferrer"
+															className="text-accent font-bold">
+															{item?.school}
+														</a>
 													</Link>
 												)}
 												{item?.club && (
-													<Link
-														href={item?.link}
-														className="text-accent font-bold">
-														{item?.club}
+													<Link passHref legacyBehavior href={item?.link}>
+														<a
+															target="_blank"
+															rel="noopener noreferrer"
+															className="text-accent font-bold">
+															{item?.club}
+														</a>
 													</Link>
 												)}
 											</div>
@@ -484,9 +493,15 @@ const About = () => {
 															)}
 															{item.certif && (
 																<Link
-																	href={item?.certif}
-																	className="text-accent font-bold">
-																	Certificat
+																	passHref
+																	legacyBehavior
+																	href={item?.certif}>
+																	<a
+																		target="_blank"
+																		rel="noopener noreferrer"
+																		className="text-accent font-bold">
+																		Certificat
+																	</a>
 																</Link>
 															)}
 														</div>
