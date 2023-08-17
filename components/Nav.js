@@ -30,9 +30,6 @@ export const navData = [
 //next
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
-import LangDrop from "./Lang-Drop";
-import { FaDownload } from "react-icons/fa";
 import DownlaodCv from "./DownlaodCv";
 
 const Nav = () => {

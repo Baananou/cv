@@ -1,6 +1,4 @@
-import { appWithTranslation } from "next-i18next";
 import "../styles/globals.css";
-import nextI18nextConfig from "../i18n/next-i18next.config";
 
 // components
 import Layout from "../components/Layout";
@@ -35,4 +33,4 @@ function MyApp({ Component, pageProps }) {
 	);
 }
 
-export default appWithTranslation(MyApp, nextI18nextConfig);
+export default MyApp;
