@@ -35,12 +35,17 @@ const workSlides = {
 					repo: "https://github.com/Baananou",
 				},
 
-				// {
-				// 	title: "title",
-				// 	path: "/thumb1.jpg",
-				// 	icons: [<BsArrowRight key={1} />, <BsArrowRight key={1} />],
-				// 	repo: "https://github.com/Baananou",
-				// },
+				{
+					title: "Personal website",
+					path: "/thumb4.jpg",
+					icons: [
+						<SiNextdotjs key={1} size={20} />,
+						<SiTailwindcss key={1} size={20} />,
+						<SiGithub key={1} size={20} />,
+						<SiNetlify key={1} size={20} />,
+					],
+					repo: "https://github.com/Baananou/Personal-Website",
+				},
 			],
 		},
 		// {
@@ -87,6 +92,8 @@ import {
 	SiFirebase,
 	SiFlask,
 	SiFlutter,
+	SiGithub,
+	SiNetlify,
 	SiNextdotjs,
 	SiPython,
 	SiTailwindcss,
