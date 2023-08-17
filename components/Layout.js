@@ -12,11 +12,21 @@ const sora = Sora({
 import Nav from "../components/Nav";
 import TopLeftImg from "../components/TopLeftImg";
 import Header from "../components/Header";
+import { NextSeo } from "next-seo";
+import { useRouter } from "next/router";
 
 const Layout = ({ children }) => {
+	const router = useRouter();
+
 	return (
 		<div
 			className={`page bg-site text-white bg-cover bg-no-repea ${sora.variable} font-sora relative`}>
+			<NextSeo
+				titleTemplate={`%s | Mohamed Yessine Baananou`}
+				title={"Baananou"}
+				description={"Baananou"}
+				canonical={"https://baananou.netlify.app/" + `${router.pathname}`}
+			/>
 			<TopLeftImg />
 			<Nav />
 			<Header />

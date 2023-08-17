@@ -10,6 +10,8 @@ class MyDocument extends Document {
 						name="viewport"
 						content="width=device-width, initial-scale=1.0"
 					/>
+					<meta name="description" content="This is my personal website." />
+
 					<link
 						rel="apple-touch-icon-precomposed"
 						sizes="57x57"
