@@ -6,7 +6,7 @@ const cspHashOf = (text) => {
 	return `'sha256-${hash.digest("base64")}'`;
 };
 
-class MyDocument extends Document {
+class MyDocument extends Document(ctx) {
 	render() {
 		let csp = `default-src 'self'; script-src 'self' ${cspHashOf(
 			NextScript.getInlineScriptSource(ctx)
