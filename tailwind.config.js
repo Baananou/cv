@@ -31,7 +31,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				explosion:
-					'url("https://res.cloudinary.com/duaagiskm/image/upload/v1692062236/bg-explosion_t6fdmv.png")',
+					'url("https://res.cloudinary.com/duaagiskm/image/upload/v1692305543/cv%20webp/bg-explosion_t6fdmv_zepf1q.webp")',
 				circleStar:
 					'url("https://res.cloudinary.com/duaagiskm/image/upload/v1692061988/circle-star_whyvuy.svg")',
 				site: 'url("https://res.cloudinary.com/duaagiskm/image/upload/v1692061954/site-bg_rhkfvq.svg")',

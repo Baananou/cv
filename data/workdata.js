@@ -19,7 +19,7 @@ export const workSlides = {
 			images: [
 				{
 					title: "React NAtive ToDo App",
-					path: "https://res.cloudinary.com/duaagiskm/image/upload/v1692302448/thumb1_tjrbba.png",
+					path: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305497/cv%20webp/thumb1_tjrbba_odwa6o.webp",
 					icons: [
 						<TbBrandReactNative key={1} size={20} />,
 						<TbBrandFirebase key={1} size={20} />,
@@ -29,7 +29,7 @@ export const workSlides = {
 				},
 				{
 					title: "flutter_weatherapp",
-					path: "https://res.cloudinary.com/duaagiskm/image/upload/v1692302452/thumb2_wsavkq.png",
+					path: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305498/cv%20webp/thumb2_wsavkq_p5osrg.webp",
 					icons: [
 						<SiFlutter key={1} size={20} />,
 						<SiDart key={1} size={20} />,
@@ -38,7 +38,7 @@ export const workSlides = {
 				},
 				{
 					title: "title",
-					path: "https://res.cloudinary.com/duaagiskm/image/upload/v1692302446/thumb3_vuzu9x.png",
+					path: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305501/cv%20webp/thumb3_vuzu9x_iyu81y.webp",
 					icons: [
 						<SiNextdotjs key={1} size={20} />,
 						<SiTailwindcss key={1} size={20} />,
@@ -51,7 +51,7 @@ export const workSlides = {
 
 				{
 					title: "Personal website",
-					path: "https://res.cloudinary.com/duaagiskm/image/upload/v1692302454/thumb4_zlbuym.png",
+					path: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305502/cv%20webp/thumb4_zlbuym_lxjzcy.webp",
 					icons: [
 						<SiNextdotjs key={1} size={20} />,
 						<SiTailwindcss key={1} size={20} />,

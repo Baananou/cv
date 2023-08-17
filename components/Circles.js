@@ -7,7 +7,7 @@ const Circles = () => {
 			<Image
 				priority
 				src={
-					"https://res.cloudinary.com/duaagiskm/image/upload/v1692062002/circles_mkgu5a.png"
+					"https://res.cloudinary.com/duaagiskm/image/upload/v1692305493/cv%20webp/circles_mkgu5a_if8ili.webp"
 				}
 				width={260}
 				height={200}

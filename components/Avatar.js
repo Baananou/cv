@@ -3,18 +3,10 @@ import Image from "next/image";
 const Avatar = ({ width, height }) => {
 	return (
 		<div className="max-w-none">
-			{/* <Image
-priority
-				src={"/bgme.png"}
-				width={737}
-				height={678}
-				alt="Avatar"
-				className="translate-z-0 w-full h-full"
-			/> */}
 			<Image
 				priority
 				src={
-					"https://res.cloudinary.com/duaagiskm/image/upload/v1692061934/me4_apbzty.png"
+					"https://res.cloudinary.com/duaagiskm/image/upload/v1692305501/cv%20webp/me4_apbzty_mfexrs.webp"
 				}
 				alt=""
 				width={width}

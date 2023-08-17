@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
 	return (
 		<div
 			className={`page bg-site text-white bg-cover bg-no-repea ${sora.variable} font-sora relative`}>
-			{/* <TopLeftImg /> */}
+			<TopLeftImg />
 			<Nav />
 			<Header />
 			{children}
