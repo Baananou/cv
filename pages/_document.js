@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from "next/document";
 import crypto from "crypto";
 const cspHashOf = (text) => {
 	const hash = crypto.createHash("sha256");
@@ -6,119 +6,113 @@ const cspHashOf = (text) => {
 	return `'sha256-${hash.digest("base64")}'`;
 };
 
-class MyDocument extends Document(ctx) {
-	render() {
-		let csp = `default-src 'self'; script-src 'self' ${cspHashOf(
+export default function Document(ctx) {
+	let csp = `default-src 'self'; script-src 'self' ${cspHashOf(
+		NextScript.getInlineScriptSource(ctx)
+	)}`;
+	if (process.env.NODE_ENV !== "production") {
+		csp = `style-src 'self' 'unsafe-inline'; font-src 'self' data:; default-src 'self'; script-src 'unsafe-eval' 'self' ${cspHashOf(
 			NextScript.getInlineScriptSource(ctx)
 		)}`;
-		if (process.env.NODE_ENV !== "production") {
-			csp = `style-src 'self' 'unsafe-inline'; font-src 'self' data:; default-src 'self'; script-src 'unsafe-eval' 'self' ${cspHashOf(
-				NextScript.getInlineScriptSource(ctx)
-			)}`;
-		}
-		return (
-			<Html lang="en">
-				<Head>
-					<meta charSet="UTF-8" />
-					<meta httpEquiv="Content-Security-Policy" content={csp} />
-					<meta name="description" content="This is my personal website." />
-
-					<link
-						rel="apple-touch-icon-precomposed"
-						sizes="57x57"
-						href="apple-touch-icon-57x57.png"
-					/>
-					<link
-						rel="apple-touch-icon-precomposed"
-						sizes="114x114"
-						href="apple-touch-icon-114x114.png"
-					/>
-					<link
-						rel="apple-touch-icon-precomposed"
-						sizes="72x72"
-						href="apple-touch-icon-72x72.png"
-					/>
-					<link
-						rel="apple-touch-icon-precomposed"
-						sizes="144x144"
-						href="apple-touch-icon-144x144.png"
-					/>
-					<link
-						rel="apple-touch-icon-precomposed"
-						sizes="60x60"
-						href="apple-touch-icon-60x60.png"
-					/>
-					<link
-						rel="apple-touch-icon-precomposed"
-						sizes="120x120"
-						href="apple-touch-icon-120x120.png"
-					/>
-					<link
-						rel="apple-touch-icon-precomposed"
-						sizes="76x76"
-						href="apple-touch-icon-76x76.png"
-					/>
-					<link
-						rel="apple-touch-icon-precomposed"
-						sizes="152x152"
-						href="apple-touch-icon-152x152.png"
-					/>
-					<link
-						rel="icon"
-						type="image/png"
-						href="favicon-196x196.png"
-						sizes="196x196"
-					/>
-					<link
-						rel="icon"
-						type="image/png"
-						href="favicon-96x96.png"
-						sizes="96x96"
-					/>
-					<link
-						rel="icon"
-						type="image/png"
-						href="favicon-32x32.png"
-						sizes="32x32"
-					/>
-					<link
-						rel="icon"
-						type="image/png"
-						href="favicon-16x16.png"
-						sizes="16x16"
-					/>
-					<link
-						rel="icon"
-						type="image/png"
-						href="favicon-128.png"
-						sizes="128x128"
-					/>
-					<meta name="application-name" content="Personal Website" />
-					<meta name="msapplication-TileColor" content="#FFFFFF" />
-					<meta name="msapplication-TileImage" content="mstile-144x144.png" />
-					<meta
-						name="msapplication-square70x70logo"
-						content="mstile-70x70.png"
-					/>
-					<meta
-						name="msapplication-square150x150logo"
-						content="mstile-150x150.png"
-					/>
-					<meta
-						name="msapplication-wide310x150logo"
-						content="mstile-310x150.png"
-					/>
-					<meta
-						name="msapplication-square310x310logo"
-						content="mstile-310x310.png"
-					/>
-				</Head>
-				<body>
-					<Main />
-					<NextScript />
-				</body>
-			</Html>
-		);
 	}
+	return (
+		<Html lang="en">
+			<Head>
+				<meta charSet="UTF-8" />
+				<meta httpEquiv="Content-Security-Policy" content={csp} />
+				<meta name="description" content="This is my personal website." />
+
+				<link
+					rel="apple-touch-icon-precomposed"
+					sizes="57x57"
+					href="apple-touch-icon-57x57.png"
+				/>
+				<link
+					rel="apple-touch-icon-precomposed"
+					sizes="114x114"
+					href="apple-touch-icon-114x114.png"
+				/>
+				<link
+					rel="apple-touch-icon-precomposed"
+					sizes="72x72"
+					href="apple-touch-icon-72x72.png"
+				/>
+				<link
+					rel="apple-touch-icon-precomposed"
+					sizes="144x144"
+					href="apple-touch-icon-144x144.png"
+				/>
+				<link
+					rel="apple-touch-icon-precomposed"
+					sizes="60x60"
+					href="apple-touch-icon-60x60.png"
+				/>
+				<link
+					rel="apple-touch-icon-precomposed"
+					sizes="120x120"
+					href="apple-touch-icon-120x120.png"
+				/>
+				<link
+					rel="apple-touch-icon-precomposed"
+					sizes="76x76"
+					href="apple-touch-icon-76x76.png"
+				/>
+				<link
+					rel="apple-touch-icon-precomposed"
+					sizes="152x152"
+					href="apple-touch-icon-152x152.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					href="favicon-196x196.png"
+					sizes="196x196"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					href="favicon-96x96.png"
+					sizes="96x96"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					href="favicon-32x32.png"
+					sizes="32x32"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					href="favicon-16x16.png"
+					sizes="16x16"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					href="favicon-128.png"
+					sizes="128x128"
+				/>
+				<meta name="application-name" content="Personal Website" />
+				<meta name="msapplication-TileColor" content="#FFFFFF" />
+				<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+				<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+				<meta
+					name="msapplication-square150x150logo"
+					content="mstile-150x150.png"
+				/>
+				<meta
+					name="msapplication-wide310x150logo"
+					content="mstile-310x150.png"
+				/>
+				<meta
+					name="msapplication-square310x310logo"
+					content="mstile-310x310.png"
+				/>
+			</Head>
+			<body>
+				<Main />
+				<NextScript />
+			</body>
+		</Html>
+	);
 }
-export default MyDocument;
