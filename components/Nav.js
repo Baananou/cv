@@ -33,7 +33,6 @@ import { useRouter } from "next/router";
 import DownlaodCv from "./DownlaodCv";
 
 const Nav = () => {
-	const { i18n } = useTranslation();
 	const router = useRouter();
 	const pathname = router.pathname;
 	return (
