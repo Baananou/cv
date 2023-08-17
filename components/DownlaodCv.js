@@ -4,6 +4,7 @@ import { MdSimCardDownload } from "react-icons/md";
 function DownlaodCv() {
 	return (
 		<a
+			aria-label="CV"
 			className="-ml-4 xl:ml-0 xl:-mt-2 relative group"
 			href="/resume.pdf"
 			download="resume.pdf"

@@ -126,6 +126,7 @@ const About = () => {
 												{item?.school && (
 													<Link passHref legacyBehavior href={item?.link}>
 														<a
+															aria-label="School"
 															target="_blank"
 															rel="noopener noreferrer"
 															className="text-accent font-bold">
@@ -136,6 +137,7 @@ const About = () => {
 												{item?.club && (
 													<Link passHref legacyBehavior href={item?.link}>
 														<a
+															aria-label="Club"
 															target="_blank"
 															rel="noopener noreferrer"
 															className="text-accent font-bold">
@@ -188,6 +190,7 @@ const About = () => {
 																	legacyBehavior
 																	href={item?.certif}>
 																	<a
+																		aria-label="Certificat"
 																		target="_blank"
 																		rel="noopener noreferrer"
 																		className="text-accent font-bold">

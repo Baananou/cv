@@ -27,7 +27,10 @@ const WorkSlider = () => {
 										href={image.repo}
 										key={index}
 										className="relative rounded-lg overflow-hidden flex items-center justify-center group">
-										<a target="_blank" rel="noopener noreferrer">
+										<a
+											target="_blank"
+											rel="noopener noreferrer"
+											aria-label="Image">
 											<div className="flex items-center justify-center relative overflow-hidden group">
 												<Image
 													alt=""

@@ -41,6 +41,7 @@ const Nav = () => {
 				{navData.map((link, index) => {
 					return (
 						<Link
+							aria-label="paths"
 							className={`${
 								link.path === pathname && "text-hover"
 							} relative flex items-center group hover:text-hover transition-all duration-500`}

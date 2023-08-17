@@ -18,7 +18,7 @@ const Socials = () => {
 				legacyBehavior
 				href={"https://www.linkedin.com/in/mohamed-yessine-baananou/"}
 				className="hover:text-hover transition-all duration-300 text-2xl">
-				<a target="_blank" rel="noopener noreferrer">
+				<a target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
 					<RiLinkedinLine />
 				</a>
 			</Link>
@@ -27,7 +27,7 @@ const Socials = () => {
 				legacyBehavior
 				href={"https://github.com/baananou"}
 				className="hover:text-hover transition-all duration-300 text-2xl">
-				<a target="_blank" rel="noopener noreferrer">
+				<a target="_blank" rel="noopener noreferrer" aria-label="Github">
 					<RiGithubLine />
 				</a>
 			</Link>
@@ -36,7 +36,7 @@ const Socials = () => {
 				legacyBehavior
 				href={"https://gitlab.com/baananou"}
 				className="hover:text-hover transition-all duration-300 text-2xl">
-				<a target="_blank" rel="noopener noreferrer">
+				<a target="_blank" rel="noopener noreferrer" aria-label="Gitlab">
 					<RiGitlabLine />
 				</a>
 			</Link>
@@ -45,7 +45,7 @@ const Socials = () => {
 				legacyBehavior
 				href={"https://www.facebook.com/Mohamed.Yessine.Baananou/"}
 				className="hover:text-hover transition-all duration-300 text-2xl">
-				<a target="_blank" rel="noopener noreferrer">
+				<a target="_blank" rel="noopener noreferrer" aria-label="Facebook">
 					<RiFacebookLine />
 				</a>
 			</Link>
@@ -54,7 +54,7 @@ const Socials = () => {
 				legacyBehavior
 				href={"https://www.instagram.com/mohamed_yessine_baananou/"}
 				className="hover:text-hover transition-all duration-300 text-2xl">
-				<a target="_blank" rel="noopener noreferrer">
+				<a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
 					<RiInstagramLine />
 				</a>
 			</Link>
@@ -63,7 +63,7 @@ const Socials = () => {
 				legacyBehavior
 				href={"https://twitter.com/YessineBaananou"}
 				className="hover:text-hover transition-all duration-300 text-2xl">
-				<a target="_blank" rel="noopener noreferrer">
+				<a target="_blank" rel="noopener noreferrer" aria-label="Twitter">
 					<RiTwitterLine />
 				</a>
 			</Link>
