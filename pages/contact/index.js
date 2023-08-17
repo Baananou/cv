@@ -43,12 +43,14 @@ const Contact = () => {
 						onSubmit={handleSubmit}>
 						<div className="flex gap-x-6 w-full">
 							<input
+								id="name"
 								type="text"
 								placeholder="nom"
 								className="input"
 								name="name"
 							/>
 							<input
+								id="email"
 								type="email"
 								placeholder="email"
 								className="input"
@@ -56,12 +58,14 @@ const Contact = () => {
 							/>
 						</div>
 						<input
+							id="subject"
 							type="text"
 							placeholder="objet"
 							className="input"
 							name="subject"
 						/>
 						<textarea
+							id="message"
 							className="textarea"
 							placeholder="message"
 							name="message"></textarea>
