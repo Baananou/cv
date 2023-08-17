@@ -1,12 +1,26 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import crypto from "crypto";
+const cspHashOf = (text) => {
+	const hash = crypto.createHash("sha256");
+	hash.update(text);
+	return `'sha256-${hash.digest("base64")}'`;
+};
 
 class MyDocument extends Document {
 	render() {
+		let csp = `default-src 'self'; script-src 'self' ${cspHashOf(
+			NextScript.getInlineScriptSource(ctx)
+		)}`;
+		if (process.env.NODE_ENV !== "production") {
+			csp = `style-src 'self' 'unsafe-inline'; font-src 'self' data:; default-src 'self'; script-src 'unsafe-eval' 'self' ${cspHashOf(
+				NextScript.getInlineScriptSource(ctx)
+			)}`;
+		}
 		return (
 			<Html lang="en">
 				<Head>
 					<meta charSet="UTF-8" />
-
+					<meta httpEquiv="Content-Security-Policy" content={csp} />
 					<meta name="description" content="This is my personal website." />
 
 					<link
