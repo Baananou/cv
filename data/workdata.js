@@ -19,7 +19,7 @@ export const workSlides = {
 			images: [
 				{
 					title: "React NAtive ToDo App",
-					path: "/thumb1.jpg",
+					path: "https://res.cloudinary.com/duaagiskm/image/upload/v1692302448/thumb1_tjrbba.png",
 					icons: [
 						<TbBrandReactNative key={1} size={20} />,
 						<TbBrandFirebase key={1} size={20} />,
@@ -29,7 +29,7 @@ export const workSlides = {
 				},
 				{
 					title: "flutter_weatherapp",
-					path: "/thumb2.jpg",
+					path: "https://res.cloudinary.com/duaagiskm/image/upload/v1692302452/thumb2_wsavkq.png",
 					icons: [
 						<SiFlutter key={1} size={20} />,
 						<SiDart key={1} size={20} />,
@@ -38,7 +38,7 @@ export const workSlides = {
 				},
 				{
 					title: "title",
-					path: "/thumb3.jpg",
+					path: "https://res.cloudinary.com/duaagiskm/image/upload/v1692302446/thumb3_vuzu9x.png",
 					icons: [
 						<SiNextdotjs key={1} size={20} />,
 						<SiTailwindcss key={1} size={20} />,
@@ -46,12 +46,12 @@ export const workSlides = {
 						<SiFlask key={1} size={20} />,
 						<SiPython key={1} size={20} />,
 					],
-					repo: "https://github.com/Baananou",
+					repo: "https://github.com/Baananou/cv",
 				},
 
 				{
 					title: "Personal website",
-					path: "/thumb4.jpg",
+					path: "https://res.cloudinary.com/duaagiskm/image/upload/v1692302454/thumb4_zlbuym.png",
 					icons: [
 						<SiNextdotjs key={1} size={20} />,
 						<SiTailwindcss key={1} size={20} />,
