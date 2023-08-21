@@ -4,7 +4,7 @@ import { MdSimCardDownload } from "react-icons/md";
 function DownloadCv() {
 	const handleDownload = () => {
 		// Construct the full URL to the PDF file
-		const pdfUrl = process.env.PUBLIC_URL + "/resume.pdf";
+		const pdfUrl = "https://baananou.netlify.app" + "/resume.pdf";
 
 		// Create an anchor element to trigger the download
 		const anchor = document.createElement("a");
