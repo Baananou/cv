@@ -185,126 +185,126 @@ export const aboutData = [
 		],
 		show: true,
 	},
-	{
-		title: "COMPÉTENCES",
-		titleIcon: <PiListChecksBold size={30} />,
+	// {
+	// 	title: "COMPÉTENCES",
+	// 	titleIcon: <PiListChecksBold size={30} />,
 
-		info: [
-			{
-				title: "Langages",
-				icons: [
-					{ icon: <FaHtml5 key={1} />, title: "HTML5" },
-					{ icon: <FaCss3 key={2} />, title: "CSS3" },
-					{ icon: <SiJavascript key={6} />, title: "JavaScript" },
-					{ icon: <SiTypescript key={7} />, title: "TypeScript" },
-					// { icon: <SiGo key={9} />, title: "Go" },
-					{ icon: <SiGraphql key={10} />, title: "GraphQL" },
-					// { icon: <SiCsharp key={11} />, title: "C#" },
-					// { icon: <SiC key={12} />, title: "C" },
-					{ icon: <SiMysql key={13} />, title: "MySQL" },
-					{ icon: <SiPython key={5} />, title: "Python" },
+	// 	info: [
+	// 		{
+	// 			title: "Langages",
+	// 			icons: [
+	// 				{ icon: <FaHtml5 key={1} />, title: "HTML5" },
+	// 				{ icon: <FaCss3 key={2} />, title: "CSS3" },
+	// 				{ icon: <SiJavascript key={6} />, title: "JavaScript" },
+	// 				{ icon: <SiTypescript key={7} />, title: "TypeScript" },
+	// 				{ icon: <SiMysql key={13} />, title: "MySQL" },
+	// 				{ icon: <SiPython key={5} />, title: "Python" },
+	// 				// { icon: <FaJava key={14} />, title: "Java" },
 
-					{ icon: <FaJava key={14} />, title: "Java" },
-					{ icon: <SiDart key={4} />, title: "Dart" },
-					{ icon: <SiPhp key={8} />, title: "PHP" },
-				],
-			},
-			{
-				title: "Frameworks",
-				icons: [
-					{ icon: <FaReact key={1} />, title: "React" },
-					{ icon: <SiNextdotjs key={2} />, title: "Next.js" },
-					{ icon: <SiTailwindcss key={4} />, title: "Tailwind CSS" },
+	// 				// { icon: <SiGo key={9} />, title: "Go" },
+	// 				// { icon: <SiGraphql key={10} />, title: "GraphQL" },
+	// 				// { icon: <SiCsharp key={11} />, title: "C#" },
+	// 				// { icon: <SiC key={12} />, title: "C" },
+	// 				// { icon: <SiDart key={4} />, title: "Dart" },
+	// 				// { icon: <SiPhp key={8} />, title: "PHP" },
+	// 			],
+	// 		},
+	// 		{
+	// 			title: "Frameworks",
+	// 			icons: [
+	// 				{ icon: <FaReact key={1} />, title: "React" },
+	// 				{ icon: <SiNextdotjs key={2} />, title: "Next.js" },
+	// 				{ icon: <SiTailwindcss key={4} />, title: "Tailwind CSS" },
+	// 				{ icon: <SiI18Next key={9} />, title: "i18next" },
+	// 				{ icon: <SiFlask key={6} />, title: "Flask" },
 
-					{ icon: <SiI18Next key={9} />, title: "i18next" },
-					// { icon: <SiAngular key={3} />, title: "Angular" },
-					// { icon: <SiBootstrap key={5} />, title: "Bootstrap" },
-					{ icon: <SiFlask key={6} />, title: "Flask" },
-					// { icon: <SiDotnet key={7} />, title: ".NET" },
-					{ icon: <SiFlutter key={8} />, title: "Flutter" },
-					{ icon: <SiLaravel key={8} />, title: "Laravel" },
-				],
-			},
-			{
-				title: "IDE",
-				icons: [
-					{ icon: <SiEclipseide key={1} />, title: "Eclipse IDE" },
-					{ icon: <SiVisualstudio key={2} />, title: "Visual Studio" },
-					{ icon: <SiVisualstudiocode key={3} />, title: "Visual Studio Code" },
-					{ icon: <SiAndroidstudio key={3} />, title: "Android Studio" },
-				],
-			},
-			{
-				title: "Système d'exploitation",
-				icons: [
-					{ icon: <SiWindows key={1} />, title: "Windows" },
-					{ icon: <SiLinux key={2} />, title: "Linux" },
-				],
-			},
-			{
-				title: "Test API",
-				icons: [{ icon: <SiPostman key={1} />, title: "Postman" }],
-			},
-			{
-				title: "Design",
-				icons: [
-					{ icon: <FaFigma key={1} />, title: "Figma" },
-					{ icon: <SiAdobexd key={2} />, title: "Adobe XD" },
-					{ icon: <SiAdobephotoshop key={3} />, title: "Adobe Photoshop" },
-					{ icon: <SiAdobeillustrator key={4} />, title: "Adobe Illustrator" },
-				],
-			},
-		],
-		show: true,
-	},
-	{
-		title: "CERTIFICATION",
-		titleIcon: <PiCertificateFill size={30} />,
+	// 				// { icon: <SiAngular key={3} />, title: "Angular" },
+	// 				// { icon: <SiBootstrap key={5} />, title: "Bootstrap" },
+	// 				// { icon: <SiDotnet key={7} />, title: ".NET" },
+	// 				// { icon: <SiLaravel key={8} />, title: "Laravel" },
+	// 				// { icon: <SiFlutter key={8} />, title: "Flutter" },
+	// 			],
+	// 		},
+	// 		{
+	// 			title: "Design",
+	// 			icons: [
+	// 				{ icon: <FaFigma key={1} />, title: "Figma" },
+	// 				{ icon: <SiAdobexd key={2} />, title: "Adobe XD" },
+	// 				{ icon: <SiAdobephotoshop key={3} />, title: "Adobe Photoshop" },
+	// 				{ icon: <SiAdobeillustrator key={4} />, title: "Adobe Illustrator" },
+	// 			],
+	// 		},
+	// 		{
+	// 			title: "IDE",
+	// 			icons: [
+	// 				{ icon: <SiEclipseide key={1} />, title: "Eclipse IDE" },
+	// 				{ icon: <SiVisualstudio key={2} />, title: "Visual Studio" },
+	// 				{ icon: <SiVisualstudiocode key={3} />, title: "Visual Studio Code" },
+	// 				// { icon: <SiAndroidstudio key={3} />, title: "Android Studio" },
+	// 			],
+	// 		},
+	// 		{
+	// 			title: "Système d'exploitation",
+	// 			icons: [
+	// 				{ icon: <SiWindows key={1} />, title: "Windows" },
+	// 				{ icon: <SiLinux key={2} />, title: "Linux" },
+	// 			],
+	// 		},
+	// 		{
+	// 			title: "Test API",
+	// 			icons: [{ icon: <SiPostman key={1} />, title: "Postman" }],
+	// 		},
+	// 	],
+	// 	show: true,
+	// },
+	// {
+	// 	title: "CERTIFICATION",
+	// 	titleIcon: <PiCertificateFill size={30} />,
 
-		info: [
-			{
-				title: "Introduction à SQL en SQL - DataCamp",
-				stage: "2023",
-				certif:
-					"https://www.datacamp.com/statement-of-accomplishment/course/f2fdf7e9ebd6f851f5e8cc6221bf0ab745c47b46",
-			},
-			{
-				title: "SQL intermédiaire en SQL - DataCamp",
-				stage: "2023",
-				certif:
-					"https://www.datacamp.com/statement-of-accomplishment/course/5e9324228e14ae661d6beb005da21b8edac47838",
-			},
-			{
-				title: "Jointure de données en SQL - DataCamp",
-				stage: "2023",
-				certif:
-					"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
-			},
-			{
-				title: "Classification d'images de base avec TensorFlow - Coursera",
-				stage: "2023",
-				certif:
-					"https://www.coursera.org/account/accomplishments/verify/YL46X932EZNF?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project",
-			},
-			{
-				title: "Formation de Premiers Secours - Croissant-Rouge Tunisien",
-				stage: "2022",
-				// certif:
-				// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
-			},
-			{
-				title: "DELF - Score : 76/100 - AMIDEAST SOUSSE",
-				stage: "2022",
-				// certif:
-				// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
-			},
-			{
-				title: "TOEIC - Score : 815/1000 - AMIDEAST SOUSSE",
-				stage: "2022",
-				// certif:
-				// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
-			},
-		],
-		show: true,
-	},
+	// 	info: [
+	// 		{
+	// 			title: "Introduction à SQL en SQL - DataCamp",
+	// 			stage: "2023",
+	// 			certif:
+	// 				"https://www.datacamp.com/statement-of-accomplishment/course/f2fdf7e9ebd6f851f5e8cc6221bf0ab745c47b46",
+	// 		},
+	// 		{
+	// 			title: "SQL intermédiaire en SQL - DataCamp",
+	// 			stage: "2023",
+	// 			certif:
+	// 				"https://www.datacamp.com/statement-of-accomplishment/course/5e9324228e14ae661d6beb005da21b8edac47838",
+	// 		},
+	// 		{
+	// 			title: "Jointure de données en SQL - DataCamp",
+	// 			stage: "2023",
+	// 			certif:
+	// 				"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
+	// 		},
+	// 		{
+	// 			title: "Classification d'images de base avec TensorFlow - Coursera",
+	// 			stage: "2023",
+	// 			certif:
+	// 				"https://www.coursera.org/account/accomplishments/verify/YL46X932EZNF?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project",
+	// 		},
+	// 		{
+	// 			title: "Formation de Premiers Secours - Croissant-Rouge Tunisien",
+	// 			stage: "2022",
+	// 			// certif:
+	// 			// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
+	// 		},
+	// 		{
+	// 			title: "DELF - Score : 76/100 - AMIDEAST SOUSSE",
+	// 			stage: "2022",
+	// 			// certif:
+	// 			// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
+	// 		},
+	// 		{
+	// 			title: "TOEIC - Score : 815/1000 - AMIDEAST SOUSSE",
+	// 			stage: "2022",
+	// 			// certif:
+	// 			// 	"https://www.datacamp.com/statement-of-accomplishment/course/4d70fd1ad66f5e5b97ccda048ae885f67966ca02",
+	// 		},
+	// 	],
+	// 	show: true,
+	// },
 ];

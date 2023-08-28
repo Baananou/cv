@@ -56,3 +56,29 @@
   src: url("../assets/fonts/Bestermind/BestermindRegular.ttf") format("embedded-opentype"),
     url("../assets/fonts/Bestermind/BestermindRegular.ttf") format("truetype");
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0527595b;
+  border-radius: 5px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7da0ca;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5483b3;
+  border-radius: 5px;
+
+}

@@ -39,8 +39,8 @@ const Home = () => {
 						exit="hidden"
 						className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
 						<p className="text-xl text-center xl:text-justify my-4">
-							Je suis Mohamed Yessine Baananou, étudiant en génie informatique à
-							l&apos;École Polytechnique de Sousse.
+							Etudiant en génie informatique à l&apos;École Polytechnique de
+							Sousse.
 						</p>
 						<p className="text-xl text-justify my-4 xl:block hidden">
 							Passionné par le développement web et mobile, je suis aussi
