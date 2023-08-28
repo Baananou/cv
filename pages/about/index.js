@@ -32,7 +32,7 @@ const About = () => {
 				className="hidden xl:flex absolute bottom-0 -left-[370px]">
 				<Avatar />
 			</motion.div> */}
-			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 overflow-y-auto scrollbar-track-current">
 				<div className="flex-1 flex flex-col justify-center">
 					<motion.div
 						variants={fadeIn("right", 0, 2)}
@@ -95,11 +95,12 @@ const About = () => {
 									className={`${
 										index === itemIndex &&
 										" text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-									}  flex  justify-center items-center gap-1 cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 group `}
+									}  flex  justify-center items-center gap-1 cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 group`}
 									onClick={() => {
 										setIndex(itemIndex);
 									}}>
-									{item.titleIcon} {item.title}
+									<div className="hidden xl:block">{item.titleIcon}</div>
+									{item.title}
 									<div className="opacity-0 group-hover:opacity-100 bg-black text-white text-xs text-center px-2 py-1 rounded absolute bottom-full left-1/2 transform -translate-x-1/2 transition-opacity duration-300 pointer-events-none">
 										{item.title}
 									</div>
@@ -107,7 +108,7 @@ const About = () => {
 							);
 						})}
 					</div>
-					<div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4 overflow-y-auto scrollbar-track-current">
+					<div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4 xl:overflow-y-auto xl:scrollbar-track-current">
 						{aboutData[index].info.map((item, itemIndex) => {
 							return (
 								<div key={itemIndex}>
