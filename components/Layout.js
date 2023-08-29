@@ -26,6 +26,20 @@ const Layout = ({ children }) => {
 				title={"Baananou"}
 				description={"Baananou"}
 				canonical={"https://baananou.netlify.app/" + `${router.pathname}`}
+				openGraph={{
+					title: "Portfolio",
+					description: "Portfolio de Mohamed Yessine Baananou",
+					images: [
+						{
+							url: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305501/cv%20webp/me4_apbzty_mfexrs.webp",
+							width: 1200,
+							height: 630,
+							alt: "Image Alt Text",
+						},
+					],
+					url: "https://baananou.netlify.app/",
+					type: "website",
+				}}
 			/>
 			<TopLeftImg />
 			<Nav />
