@@ -20,7 +20,7 @@ import {
 export default function Projects() {
 	const projectsData = [
 		{
-			title: "React Native ToDo App",
+			title: "G. des Tâches",
 			description:
 				"Conception et développement d'une application mobile pour gérer les tâches.",
 			tags: [
@@ -36,7 +36,7 @@ export default function Projects() {
 			repo: "https://github.com/Baananou/React-Native-TODO-APP-EXPO-Firebase-",
 		},
 		{
-			title: "Weather App",
+			title: "Suivie Météo",
 			description:
 				"Développement d'une application mobile pour consulter la météo en utilisant open Weather Api.",
 			tags: [
@@ -63,9 +63,9 @@ export default function Projects() {
 			repo: "https://github.com/Baananou/Processus-industriel-de-contr-le-et-de-commande-avanc-de-teinture-du-bois-FRONT",
 		},
 		{
-			title: "Personal website",
+			title: "Site Porfolio",
 			description:
-				"Conception et développement d'une application de Suivi et coordination optimisés des stages.",
+				"Conception et développement d'un site Porfolio, montrant mon expertise en développement web.",
 			tags: [
 				{ icon: <SiNextdotjs key={1} size={20} />, title: "Next.js" },
 				{ icon: <SiTailwindcss key={2} size={20} />, title: "Tailwind CSS" },
