@@ -55,8 +55,14 @@ export default function Projects() {
 				{ icon: <SiNextdotjs key={1} size={20} />, title: "Next.js" },
 				{ icon: <SiTailwindcss key={1} size={20} />, title: "Tailwind CSS" },
 				{ icon: <SiFirebase key={2} size={20} />, title: "Firebase" },
-				{ icon: <SiFlask key={3} size={20} />, title: "Flask" },
-				{ icon: <SiPython key={4} size={20} />, title: "Python" },
+				{
+					icon: (
+						<>
+							<SiFlask key={3} size={20} /> <SiPython key={4} size={20} />
+						</>
+					),
+					title: "Flask(PY)",
+				},
 			],
 			imageUrl:
 				"https://res.cloudinary.com/duaagiskm/image/upload/v1692305501/cv%20webp/thumb3_vuzu9x_iyu81y.webp",

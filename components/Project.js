@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
+import { SiGithub } from "react-icons/si";
+import { GiStrikingArrows } from "react-icons/gi";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 export default function Project({ title, description, tags, imageUrl, repo }) {
 	return (
@@ -18,6 +21,16 @@ export default function Project({ title, description, tags, imageUrl, repo }) {
 								{tag.title}
 							</li>
 						))}
+
+						<div className="w-auto bg-gray-900 px-3 py-2 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70 xl:flex justify-center items-center gap-2">
+							<Link
+								href={repo}
+								className="flex justify-center items-center gap-2 text-white font-bold">
+								{/* <SiGithub size={20} /> */}
+								Consulter Code
+								<BsArrowRight size={20} />
+							</Link>
+						</div>
 					</ul>
 				</div>
 				<Image
@@ -37,9 +50,6 @@ export default function Project({ title, description, tags, imageUrl, repo }) {
                                 group-even:group-hover:rotate-2
                                 group-even:right-[initial] group-even:-left-40"
 				/>
-				<div className="xl:absolute hidden  bottom-2 right-2 w-36 bg-black/[0.7] px-3 py-2 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70 xl:flex justify-center items-center gap-2">
-					<Link href={repo}>Consulter Repo</Link>
-				</div>
 			</section>
 		</motion.div>
 	);
