@@ -84,8 +84,8 @@ export default function Projects() {
 		},
 	];
 	return (
-		<section className="container mx-auto py-8 h-full scrollbar-track-current overflow-y-auto xl:scrollbar-none xl:overflow-clip">
-			<div className="grid xl:grid-cols-2  gap-6">
+		<section className="container mx-auto h-full scrollbar-track-current overflow-y-auto ">
+			<div className="grid xl:grid-cols-2 lg:grid-cols-1 gap-4">
 				{projectsData.map((project, index) => (
 					<div key={index} className="flex justify-center">
 						<Project {...project} />
