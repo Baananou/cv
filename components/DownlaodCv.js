@@ -28,7 +28,7 @@ function DownlaodCv() {
 			aria-label="CV"
 			className="-ml-4 xl:ml-0 xl:-mt-2 relative group"
 			href="/resume.pdf"
-			download="resume.pdf"
+			// download="resume.pdf"
 			target="_blank"
 			rel="noopener noreferrer">
 			<MdSimCardDownload />
