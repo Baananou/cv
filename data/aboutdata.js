@@ -44,12 +44,13 @@ import {
 import { GiSkills } from "react-icons/gi";
 import { PiCertificateFill, PiListChecksBold } from "react-icons/pi";
 import { MdSchool, MdWork } from "react-icons/md";
-export const aboutData = [
+export const aboutDataFR = [
 	{
 		title: "ÉDUCATION",
 		titleIcon: <MdSchool size={30} />,
+		slug: "education",
 		info: [
-			{
+			{	
 				title: "Cycle Ingénierie Informatique (Accrédité Européen)",
 				school: "École Polytechnique De Sousse",
 				stage: "2021 – Présent",
@@ -78,7 +79,7 @@ export const aboutData = [
 	{
 		title: "EXPÉRIENCE",
 		titleIcon: <MdWork size={30} />,
-
+		slug: "experience",
 		info: [
 			{
 				title: "Développeur Web",
@@ -88,7 +89,7 @@ export const aboutData = [
 					"Incorporation des API fournies en utilisant React Query.",
 					"Création performante d'un Backend Flask/MySQL pour gérer fichiers (création, recherche, export),mettant en avant compétences web et conception de bases de données.",
 				],
-				stage: "2023 (Juillet) – Présent",
+				stage: "2023 (Juillet) – 2023 (Aôut)",
 				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305502/cv%20webp/VAERDIA_zpy9qy_ic1kk6.webp",
 				link: "https://vaerdia.com/",
 			},
@@ -131,7 +132,7 @@ export const aboutData = [
 	{
 		title: "BÉNÉVOLAT",
 		titleIcon: <FaHandsHelping size={30} />,
-
+		slug: "benevolat",
 		info: [
 			{
 				title: "Secouriste (FPS)",
@@ -185,7 +186,153 @@ export const aboutData = [
 		],
 		show: true,
 	},
-	// {
+	
+];
+export const aboutDataEn = [
+	{
+		title: "EDUCATION",
+		titleIcon: <MdSchool size={30} />,
+		slug: "education",
+		info: [
+			{
+				title: "IT Engineering Cycle (European accreditation)",
+				school: "Polytec Sousse",
+				stage: "2021 – Now",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305494/cv%20webp/t%C3%A9l%C3%A9charg%C3%A9_dlanaq_fmo79y.webp",
+				link: "https://www.linkedin.com/company/ecole-polytechnique-sousse/",
+			},
+			{
+				title:
+					"Integrated Preparatory Cycle (Mathematics, Physics, Computer Science).",
+				school: "Polytec Sousse",
+				stage: "2019 – 2021",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305494/cv%20webp/t%C3%A9l%C3%A9charg%C3%A9_dlanaq_fmo79y.webp",
+				link: "https://www.linkedin.com/company/ecole-polytechnique-sousse/",
+			},
+			{
+				title:
+					"Technical Science Baccalaureate (Electrical, Mechanical, Physics).",
+				school: "Hammam Sousse 2 High School.",
+				stage: "2018 – 2019",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305494/cv%20webp/lyc%C3%A9ehs2_v8e5jy_nbqlc3.webp",
+				link: "https://www.linkedin.com/company/lyc%C3%A9e-hammam-sousse-2/about/",
+			},
+		],
+		show: true,
+	},
+	{
+		title: "EXPERIENCE",
+		titleIcon: <MdWork size={30} />,
+		slug: "experience",
+		info: [
+			{
+				title: "Web Developer",
+				company: "VAERDIA, Sousse, Tunisia",
+				tasks: [
+					"On-site collaboration with a multidisciplinary team, highlighting skills in MUI, React.js and Next.js. My responsibilities include using templates to design custom Customer Relationship Management (CRM) solutions.",
+					"Incorporating supplied APIs using React Query.",
+					"Creation of a Flask/MySQL backend to manage files (creation, search, export), highlighting web skills and database design",
+				],
+				stage: "2023 (July) - 2023 (August)",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305502/cv%20webp/VAERDIA_zpy9qy_ic1kk6.webp",
+				link: "https://vaerdia.com/",
+			},
+			{
+				title: "Web Developer",
+				company: "JOODLAB, Sousse, Tunisia",
+				tasks: [
+					"Collaborating remotely with a team on several projects using Angular, Next.js and TailwindCSS, with GitLab as a version management platform.",
+					"Implementation of multiple languages using the I18n Internationalization Framework.",
+					"Maintenance and development to improve user experience.",
+					"Implementation of SEO strategies, optimizing content, keywords and site structure to improve online visibility and increase organic traffic.",
+				],
+				stage: "2022 – 2023",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1691950658/joodlab_ko9uea.svg",
+				link: "https://www.joodlab.com/",
+			},
+			{
+				title: "Customer support",
+				company: "JOODLAB, Sousse, Tunisia",
+				tasks: [
+					"Optimizing the user experience with detailed tutorial videos, guides and blogs for the company's hospitality and currency exchange tools.",
+				],
+				stage: "2022 – 2023",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1691950658/joodlab_ko9uea.svg",
+				link: "https://www.joodlab.com/",
+			},
+			{
+				title: "Human Resources Director",
+				company: "SAPIOUS, Sousse, Tunisia",
+				tasks: [
+					"Managing the student selection and acceptance process, coordinating groups and monitoring their attendance throughout the sessions.",
+				],
+				stage: "2022 – 2023",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305540/cv%20webp/230792985_163533325873832_1648812716993218950_n_dpnjsj_nlars1.webp",
+				link: "https://www.sapious.org/ ",
+			},
+		],
+		show: true,
+	},
+	{
+		title: "VOLUNTEERING",
+		titleIcon: <FaHandsHelping size={30} />,
+		slug: "benevolat",
+		info: [
+			{
+				title: "First-aider (FPS)",
+				club: "Red Crescent Local Committee Hammam Sousse",
+				stage: "2022 – Now",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305493/cv%20webp/crt_oljpvy_i96ilx.webp",
+				link: "https://www.facebook.com/CRTHS",
+			},
+			{
+				title: "First-aider, Club Vice-President",
+				club: "Red Crescent Academic Club Polytec Sousse",
+				stage: "2022 – 2023",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305493/cv%20webp/crt_oljpvy_i96ilx.webp",
+				link: "https://www.facebook.com/crtpolyestim",
+			},
+			{
+				title: "Organizer, graphic designer and photographer",
+				club: "Devfest, Sousse",
+				stage: "2021 – 2022",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305492/cv%20webp/devfest2021_tcpsu1_mqwjxq.webp",
+				link: "https://www.linkedin.com/company/gdg-sousse",
+			},
+			{
+				title: "Content creator and community manager",
+				club: "We Are Sousse",
+				stage: "2021 – 2022",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305499/cv%20webp/wearesousse_pmu99y_hb8zsd.webp",
+				link: "https://www.facebook.com/WeareSousse",
+			},
+			{
+				title: "Internal and External Affairs Officer",
+				club: "GDSC Polytec Sousse",
+				stage: "2021 – 2022",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305493/cv%20webp/GDSC_Ecole_Polytechnique_de_Sousse_Vertical_color_dj1a2l_z0uefp.webp",
+				link: "https://www.facebook.com/GDSCpoly",
+			},
+			{
+				title: "Club President",
+				club: "Tunivisions Polytec Sousse",
+				stage: "2020 – 2021",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305501/cv%20webp/tunivisions_eps_s2zufb_nrbnqe.webp",
+				link: "https://www.facebook.com/ClubTunivisionsEPS",
+			},
+			{
+				title: "Active Club member",
+				club: "Tunivisions Polytec Sousse",
+				stage: "2019 – 2020",
+				logo: "https://res.cloudinary.com/duaagiskm/image/upload/v1692305501/cv%20webp/tunivisions_eps_s2zufb_nrbnqe.webp",
+				link: "https://www.facebook.com/ClubTunivisionsEPS",
+			},
+		],
+		show: true,
+	},
+];
+
+// {
 	// 	title: "COMPÉTENCES",
 	// 	titleIcon: <PiListChecksBold size={30} />,
 
@@ -307,4 +454,3 @@ export const aboutData = [
 	// 	],
 	// 	show: true,
 	// },
-];

@@ -9,10 +9,15 @@ import { useRouter } from "next/router";
 // framer motion
 import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
-import { DefaultSeo } from "next-seo";
 
 //seo
 import SEO from "../seo/next-seo.config";
+import { DefaultSeo } from "next-seo";
+
+//i18n
+import nextI18nextConfig from "../i18n/next-i18next.config";
+import { appWithTranslation } from "next-i18next";
+import { SWRConfig } from "swr";
 
 function MyApp({ Component, pageProps }) {
 	const router = useRouter();
@@ -27,11 +32,13 @@ function MyApp({ Component, pageProps }) {
 			<AnimatePresence mode="wait">
 				<motion.div key={router.route} className="h-full">
 					<Transition />
-					<Component {...pageProps} />
+					<SWRConfig>
+						<Component {...pageProps} />
+					</SWRConfig>
 				</motion.div>
 			</AnimatePresence>
 		</Layout>
 	);
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp, nextI18nextConfig);

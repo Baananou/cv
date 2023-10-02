@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import nextI18nextConfig from "../i18n/next-i18next.config";
 
 export default function Custom404() {
 	return (
@@ -16,3 +18,14 @@ export default function Custom404() {
 		</div>
 	);
 }
+export const getStaticProps = async (context) => {
+	return {
+		props: {
+			...(await serverSideTranslations(
+				context.locale,
+				["common"],
+				nextI18nextConfig
+			)),
+		},
+	};
+};

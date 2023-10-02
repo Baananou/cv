@@ -8,7 +8,8 @@
 // import { fadeIn } from "../../variants";
 import Projects from "../../components/Projects";
 import ParticlesContainer from "../../components/ParticlesContainer";
-
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import nextI18nextConfig from "../../i18n/next-i18next.config";
 const Work = () => {
 	return (
 		<div className="bg-primary/30 py-36 flex items-center xl:h-max h-full">
@@ -55,3 +56,14 @@ const Work = () => {
 };
 
 export default Work;
+export const getStaticProps = async (context) => {
+	return {
+		props: {
+			...(await serverSideTranslations(
+				context.locale,
+				["common"],
+				nextI18nextConfig
+			)),
+		},
+	};
+};

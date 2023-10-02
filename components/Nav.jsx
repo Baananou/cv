@@ -9,30 +9,32 @@ import {
 	HiWallet,
 } from "react-icons/hi2";
 
-// nav data
-export const navData = [
-	{ name: "acceuil", path: "/", icon: <HiHome /> },
-	{ name: "à propos", path: "/about", icon: <HiUser /> },
-	// { name: "compétances", path: "/services", icon: <HiRectangleGroup /> },
-	{ name: "projets", path: "/work", icon: <HiWallet /> },
-	// {
-	// 	name: "testimonials",
-	// 	path: "/testimonials",
-	// 	icon: <HiChatBubbleBottomCenterText />,
-	// },
-	{
-		name: "contact",
-		path: "/contact",
-		icon: <HiEnvelope />,
-	},
-];
-
 //next
 import Link from "next/link";
 import { useRouter } from "next/router";
 import DownlaodCv from "./DownlaodCv";
+import ChangeLang from "./ChangeLang";
+import { useTranslation } from "next-i18next";
 
 const Nav = () => {
+	const { t } = useTranslation(["common"]);
+	// nav data
+	const navData = [
+		{ name: "home", path: "/", icon: <HiHome /> },
+		{ name: "about", path: "/about", icon: <HiUser /> },
+		// { name: "compétances", path: "/services", icon: <HiRectangleGroup /> },
+		{ name: "projects", path: "/work", icon: <HiWallet /> },
+		// {
+		// 	name: "testimonials",
+		// 	path: "/testimonials",
+		// 	icon: <HiChatBubbleBottomCenterText />,
+		// },
+		{
+			name: "contact",
+			path: "/contact",
+			icon: <HiEnvelope />,
+		},
+	];
 	const router = useRouter();
 	const pathname = router.pathname;
 	return (
@@ -50,7 +52,8 @@ const Nav = () => {
 							<div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
 								<div className="bg-white relative flex text-primary items-center p-[6px] rounded">
 									<div className="text-[12px] leading-none font-semibold capitalize text-center">
-										{link.name}
+										{/* {link.name} */}
+										{t(`common:navigation.${link.name}`)}
 									</div>
 									<div className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2"></div>
 								</div>
@@ -60,6 +63,7 @@ const Nav = () => {
 					);
 				})}
 				<DownlaodCv />
+				{/* <ChangeLang /> */}
 			</div>
 		</nav>
 	);

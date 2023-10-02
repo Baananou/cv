@@ -1,0 +1,49 @@
+{
+    "french": "Français",
+    "english": "English",
+    "navigation": {
+        "home": "Accueil",
+        "about": "À propos",
+        "projects": "Projets",
+        "contact": "Contact",
+        "cv": "Télécharger CV"
+    },
+    "home": {
+        "greeting": "Bonjour ! Je suis",
+        "role": "Développeur Fullstack",
+        "p1": "Etudiant en génie informatique à l'École Polytechnique de Sousse.",
+        "p2": "Passionné par le développement web et mobile, je suis aussi secouriste et engagé dans des projets associatifs. Mon expérience en développement et en leadership en fait un atout polyvalent."
+    },
+    "project": {
+        "seeCode": "Consulter Code",
+        "taskManagment": "Gestion des tâches",
+        "weather": "Prévisions météorologiques",
+        "iControle": "Sys. contrôle IoT",
+        "porfolio": "Site Porfolio",
+        "taskManagmentDesc": "Conception et développement d'une application mobile pour gérer les tâches.",
+        "weatherDesc": "Développement d'une application mobile pour consulter la météo en utilisant open Weather Api.",
+        "iControleDesc": "Conception et développement d'une interface de Contrôle avancé de teinture du bois",
+        "porfolioDesc": "Conception et développement d'un site Porfolio, montrant mon expertise en développement web."
+    },
+    "contact": {
+        "title1": "Connectons",
+        "title2": "-nous.",
+        "name": "nom",
+        "email": "email",
+        "subject": "objet",
+        "message": "message",
+        "btn": "Parlons-en",
+        "thnaks": "Merci !",
+        "reply": "Je vous répondrai dès que possible.",
+        "home": "Acceuil"
+    },
+    "about": {
+        "title0": "Transformer",
+        "title1": "les rêves",
+        "title2": "en réalité numérique.",
+        "description": "Explorateur digital dévoué, je m'immerge dans le monde du développement avec une passion inextinguible, cherchant constamment à transformer des idées en réalité.",
+        "expertisePro": "ANNÉES D'EXPÉRIENCE PROFESSIONNELLE",
+        "expertiseAssocio": "ANNÉES D'EXPÉRIENCE ASSOCIATIVE",
+        "projects": "PROJETS DE TRAVAIL ET D'ÉTUDE RÉALISÉS"
+    }
+}

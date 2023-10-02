@@ -9,11 +9,11 @@ const sora = Sora({
 });
 
 //Components
-import Nav from "../components/Nav";
 import TopLeftImg from "../components/TopLeftImg";
 import Header from "../components/Header";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
+import Nav from "./Nav";
 
 const Layout = ({ children }) => {
 	const router = useRouter();
