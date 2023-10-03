@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { HiSwitchVertical } from "react-icons/hi";
+>>>>>>> 516305328787fcd5cf4d452c053af9343017c3f6
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
@@ -23,16 +27,28 @@ function ChangeLang() {
 					onClick={() => {
 						changeLanguage("en");
 					}}
+<<<<<<< HEAD
 					className={`  text-center text-base cursor-pointer`}>
 					{t("common:english")}
+=======
+					className={`  text-center text-base cursor-pointer flex gap-1 justify-center items-center`}>
+					{t("common:english")}
+					<HiSwitchVertical />
+>>>>>>> 516305328787fcd5cf4d452c053af9343017c3f6
 				</div>
 			) : (
 				<div
 					onClick={() => {
 						changeLanguage("fr");
 					}}
+<<<<<<< HEAD
 					className={`  text-center text-base cursor-pointer`}>
 					{t("common:french")}
+=======
+					className={`  text-center text-base cursor-pointer flex gap-1 justify-center items-center`}>
+					{t("common:french")}
+					<HiSwitchVertical />
+>>>>>>> 516305328787fcd5cf4d452c053af9343017c3f6
 				</div>
 			)}
 		</div>
