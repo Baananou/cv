@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
 					type: "website",
 				}}
 			/>
-			<TopLeftImg />
+			{/* <TopLeftImg /> */}
 			<Nav />
 			<Header />
 			{children}
