@@ -1,3 +1,4 @@
+import { HiSwitchVertical } from "react-icons/hi";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
@@ -23,16 +24,18 @@ function ChangeLang() {
 					onClick={() => {
 						changeLanguage("en");
 					}}
-					className={`  text-center text-base cursor-pointer`}>
+					className={`  text-center text-base cursor-pointer flex gap-1 justify-center items-center`}>
 					{t("common:english")}
+					<HiSwitchVertical />
 				</div>
 			) : (
 				<div
 					onClick={() => {
 						changeLanguage("fr");
 					}}
-					className={`  text-center text-base cursor-pointer`}>
+					className={`  text-center text-base cursor-pointer flex gap-1 justify-center items-center`}>
 					{t("common:french")}
+					<HiSwitchVertical />
 				</div>
 			)}
 		</div>
