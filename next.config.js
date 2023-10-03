@@ -11,7 +11,7 @@ module.exports = (phase, { defaultConfig }) => {
 		},
 		reactStrictMode: true,
 		trailingSlash: true,
-		output: "export",
+		// output: "export",
 		images: {
 			domains: ["res.cloudinary.com"],
 		},
