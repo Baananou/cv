@@ -1,0 +1,49 @@
+{
+    "french": "Français",
+    "english": "English",
+    "navigation": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact",
+        "cv": "Download CV"
+    },
+    "home": {
+        "greeting": "Hello! I am",
+        "role": "Fullstack Developer",
+        "p1": "Computer engineering student at Polytec Sousse.",
+        "p2": "Passionate about web and mobile development, I'm also a first-aider and involved in community projects. My experience in development and leadership makes me a versatile asset."
+    },
+    "project": {
+        "seeCode": "View code",
+        "taskManagment": "Task Management",
+        "weather": "Weather Forecast",
+        "iControle": "Control panel IoT",
+        "porfolio": "Porfolio website",
+        "taskManagmentDesc": "Design and development of a mobile application to manage tasks.",
+        "weatherDesc": "Development of a mobile application to check the weather using open Weather Api.",
+        "iControleDesc": "Design and development of an Advanced Wood Stain Control interface",
+        "porfolioDesc": "Design and development of a Porfolio site, showing my expertise in web development."
+    },
+    "contact": {
+        "title1": "Let's ",
+        "title2": "connect.",
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "btn": "Let's talk",
+        "thnaks": "Thank you!",
+        "reply": "I'll get back to you as soon as I can.",
+        "home": "Home"
+    },
+    "about": {
+        "title0": "Transform",
+        "title1": "dreams",
+        "title2": "into digital reality.",
+        "description": "A dedicated digital explorer, I immerse myself in the world of development with unquenchable passion, constantly seeking to transform ideas into reality.",
+        "expertisePro": "YEARS OF PROFESSIONAL EXPERIENCE",
+        "expertiseAssocio": "YEARS OF ASSOCIATIVE EXPERIENCE",
+        "projects": "COMPLETED WORK AND STUDY PROJECTS"
+    }
+}

@@ -1,5 +1,6 @@
 //  data
-
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import nextI18nextConfig from "../../i18n/next-i18next.config";
 //components
 import Circles from "../../components/Circles";
 
@@ -16,22 +17,17 @@ import Image from "next/image";
 
 // counter
 import CountUp from "react-countup";
-import { aboutData } from "../../data/aboutdata";
+import { aboutDataFR, aboutDataEn } from "../../data/aboutdata";
+import { useTranslation } from "next-i18next";
 
 const About = () => {
 	const [index, setIndex] = useState(0);
+	const { t, i18n } = useTranslation(["common"]);
+	const data = i18n.language === "fr" ? aboutDataFR : aboutDataEn;
 
 	return (
 		<div className="h-full bg-primary/30 py-32 text-center xl:text-left">
 			<Circles />
-			{/* <motion.div
-				variants={fadeIn("right", 0, 2)}
-				initial="hidden"
-				animate="show"
-				exit="hidden"
-				className="hidden xl:flex absolute bottom-0 -left-[370px]">
-				<Avatar />
-			</motion.div> */}
 			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 overflow-y-auto scrollbar-track-current xl:scrollbar-none">
 				<div className="flex-1 flex flex-col justify-center">
 					<motion.div
@@ -40,9 +36,11 @@ const About = () => {
 						animate="show"
 						exit="hidden"
 						className="text-5xl mb-4">
-						Transformer{" "}
-						<span className="text-accent font-bold"> les rêves</span> en réalité
-						numérique.
+						{t("common:about.title0")}{" "}
+						<span className="text-accent font-bold">
+							{t("common:about.title1")}{" "}
+						</span>
+						{t("common:about.title2")}
 					</motion.div>
 					<motion.p
 						variants={fadeIn("right", 0, 2)}
@@ -50,9 +48,7 @@ const About = () => {
 						animate="show"
 						exit="hidden"
 						className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-						Explorateur digital dévoué, je m&apos;immerge dans le monde du
-						développement avec une passion inextinguible, cherchant constamment
-						à transformer des idées en réalité.
+						{t("common:about.description")}
 					</motion.p>
 					<div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
 						<div className="flex flex-1 xl:gap-x-6 ">
@@ -62,7 +58,7 @@ const About = () => {
 									<CountUp start={0} end={2} duration={5} /> +
 								</div>
 								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-									années d&apos;expérience professionnelle
+									{t("common:about.expertisePro")}
 								</div>
 							</div>
 							{/* Experience */}
@@ -71,7 +67,7 @@ const About = () => {
 									<CountUp start={0} end={5} duration={5} /> +
 								</div>
 								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-									années d&apos;expérience associative
+									{t("common:about.expertiseAssocio")}
 								</div>
 							</div>
 							{/* Experience */}
@@ -80,7 +76,7 @@ const About = () => {
 									<CountUp start={0} end={30} duration={5} /> +
 								</div>
 								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-									projets de travail et d&apos;étude réalisés
+									{t("common:about.projects")}
 								</div>
 							</div>
 						</div>
@@ -88,7 +84,7 @@ const About = () => {
 				</div>
 				<div className="flex flex-col w-full xl:max-w-[50%] h-[650px] pt-10 ">
 					<div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 xl:mt-20">
-						{aboutData.map((item, itemIndex) => {
+						{data.map((item, itemIndex) => {
 							return (
 								<div
 									key={itemIndex}
@@ -109,10 +105,10 @@ const About = () => {
 						})}
 					</div>
 					<div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4 xl:overflow-y-auto xl:scrollbar-track-current">
-						{aboutData[index].info.map((item, itemIndex) => {
+						{data[index].info.map((item, itemIndex) => {
 							return (
 								<div key={itemIndex}>
-									{aboutData[index].show === true ? (
+									{data[index].show === true ? (
 										<div className="py-2">
 											<div className="text-start ">
 												{item?.company && (
@@ -233,3 +229,14 @@ const About = () => {
 };
 
 export default About;
+export const getStaticProps = async (context) => {
+	return {
+		props: {
+			...(await serverSideTranslations(
+				context.locale,
+				["common"],
+				nextI18nextConfig
+			)),
+		},
+	};
+};

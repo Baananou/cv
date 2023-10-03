@@ -10,6 +10,7 @@ import {
 	RiInstagramLine,
 	RiTwitterLine,
 } from "react-icons/ri";
+import ChangeLang from "./ChangeLang";
 const Socials = () => {
 	return (
 		<div className=" flex items-center gap-x-5 text-lg">
@@ -67,6 +68,7 @@ const Socials = () => {
 					<RiTwitterLine />
 				</a>
 			</Link>
+			<ChangeLang />
 		</div>
 	);
 };

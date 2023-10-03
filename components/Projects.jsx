@@ -21,6 +21,7 @@ export default function Projects() {
 	const projectsData = [
 		{
 			title: "G. des Tâches",
+			slug: "taskManagment",
 			description:
 				"Conception et développement d'une application mobile pour gérer les tâches.",
 			tags: [
@@ -37,6 +38,7 @@ export default function Projects() {
 		},
 		{
 			title: "Suivie Météo",
+			slug: "weather",
 			description:
 				"Développement d'une application mobile pour consulter la météo en utilisant open Weather Api.",
 			tags: [
@@ -48,7 +50,8 @@ export default function Projects() {
 			repo: "https://github.com/Baananou/flutter_weatherapp",
 		},
 		{
-			title: "Interface de contrôle",
+			title: "Interface de contrôle IoT",
+			slug: "iControle",
 			description:
 				'Conception et développement d\'interface "Contrôle avancé de teinture du bois"',
 			tags: [
@@ -61,7 +64,7 @@ export default function Projects() {
 							<SiFlask key={3} size={20} /> <SiPython key={4} size={20} />
 						</>
 					),
-					title: "Flask(PY)",
+					title: "Flask(Py)",
 				},
 			],
 			imageUrl:
@@ -70,6 +73,7 @@ export default function Projects() {
 		},
 		{
 			title: "Site Porfolio",
+			slug: "porfolio",
 			description:
 				"Conception et développement d'un site Porfolio, montrant mon expertise en développement web.",
 			tags: [

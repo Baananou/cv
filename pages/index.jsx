@@ -1,12 +1,16 @@
 //Components
 import Avatar from "../components/Avatar";
 import ParticlesContainer from "../components/ParticlesContainer";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 //framer
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import nextI18nextConfig from "../i18n/next-i18next.config";
+import { useTranslation } from "next-i18next";
 
 const Home = () => {
+	const { t } = useTranslation();
 	return (
 		<div className="bg-primary/60 h-full ">
 			<ParticlesContainer />
@@ -18,7 +22,7 @@ const Home = () => {
 						animate="show"
 						exit="hidden">
 						<div className="flex flex-col items-center justify-center xl:justify-start xl:items-start overflow-y-auto">
-							<h6 className="text-xl mt-20">Bonjour ! Je suis</h6>
+							<h6 className="text-xl mt-20">{t("common:home.greeting")}</h6>
 
 							<div className="my-4 block xl:hidden">
 								<Avatar width={150} height={150} />
@@ -27,7 +31,7 @@ const Home = () => {
 							<div className="text-center xl:text-start mx-8 xl:mx-0">
 								<h1 className="my-4 text-2xl">MOHAMED YESSINE BAANANOU</h1>
 								<div className="text-accent font-bold">
-									Développeur Fullstack
+									{t("common:home.role")}
 								</div>
 							</div>
 						</div>
@@ -39,13 +43,10 @@ const Home = () => {
 						exit="hidden"
 						className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
 						<p className="text-xl text-center xl:text-justify my-4">
-							Etudiant en génie informatique à l&apos;École Polytechnique de
-							Sousse.
+							{t("common:home.p1")}
 						</p>
 						<p className="text-xl text-justify my-4 xl:block hidden">
-							Passionné par le développement web et mobile, je suis aussi
-							secouriste et engagé dans des projets associatifs. Mon expérience
-							en développement et en leadership en fait un atout polyvalent.
+							{t("common:home.p2")}
 						</p>
 					</motion.div>
 					{/* <motion.div
@@ -96,3 +97,14 @@ const Home = () => {
 };
 
 export default Home;
+export const getStaticProps = async (context) => {
+	return {
+		props: {
+			...(await serverSideTranslations(
+				context.locale,
+				["common"],
+				nextI18nextConfig
+			)),
+		},
+	};
+};
