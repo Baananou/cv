@@ -4,9 +4,6 @@ const nextConfig = {
 	i18n: {
 		...i18n,
 	},
-	reactStrictMode: true,
-	trailingSlash: true,
-	output: "standalone",
 	images: {
 		domains: ["res.cloudinary.com"],
 	},
