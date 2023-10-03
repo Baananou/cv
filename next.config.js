@@ -7,7 +7,7 @@ const nextConfig = {
 	},
 	reactStrictMode: true,
 	trailingSlash: true,
-	output: "standalone",
+	output: "export",
 	images: {
 		domains: ["res.cloudinary.com"],
 	},
